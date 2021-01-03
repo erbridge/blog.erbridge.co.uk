@@ -4,6 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import typescript from "@rollup/plugin-typescript";
 import url from "@rollup/plugin-url";
+import { mdsvex } from "mdsvex";
 import path from "path";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
@@ -14,6 +15,8 @@ import pkg from "./package.json";
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+
+const extensions = [".svelte", ".svx"];
 
 const onwarn = (warning, onwarn) =>
   (warning.code === "MISSING_EXPORT" && /'preload'/.test(warning.message)) ||
@@ -32,7 +35,8 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        preprocess: sveltePreprocess(),
+        extensions,
+        preprocess: [mdsvex(), sveltePreprocess()],
         compilerOptions: {
           dev,
           hydratable: true,
@@ -51,7 +55,7 @@ export default {
 
       legacy &&
         babel({
-          extensions: [".js", ".mjs", ".html", ".svelte"],
+          extensions: [".js", ".mjs", ".html", ...extensions],
           babelHelpers: "runtime",
           exclude: ["node_modules/@babel/**"],
           presets: [
@@ -92,7 +96,8 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        preprocess: sveltePreprocess(),
+        extensions,
+        preprocess: [mdsvex(), sveltePreprocess()],
         compilerOptions: {
           dev,
           generate: "ssr",
