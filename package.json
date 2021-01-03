@@ -1,9 +1,9 @@
 {
   "name": "blog.erbridge.co.uk",
   "scripts": {
-    "dev": "sapper dev --ext '.svelte .svx'",
-    "build": "sapper build --ext '.svelte .svx' --legacy",
-    "export": "sapper export --ext '.svelte .svx' --legacy",
+    "dev": "sapper dev --ext '.svelte .sveltemd'",
+    "build": "sapper build --ext '.svelte .sveltemd' --legacy",
+    "export": "sapper export --ext '.svelte .sveltemd' --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },

@@ -16,7 +16,8 @@ const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const extensions = [".svelte", ".svx"];
+const mdsvexExtensions = [".sveltemd"];
+const svelteExtensions = [".svelte", ...mdsvexExtensions];
 
 const onwarn = (warning, onwarn) =>
   (warning.code === "MISSING_EXPORT" && /'preload'/.test(warning.message)) ||
@@ -35,8 +36,13 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        extensions,
-        preprocess: [mdsvex(), sveltePreprocess()],
+        extensions: svelteExtensions,
+        preprocess: [
+          mdsvex({
+            extensions: mdsvexExtensions,
+          }),
+          sveltePreprocess(),
+        ],
         compilerOptions: {
           dev,
           hydratable: true,
@@ -55,7 +61,7 @@ export default {
 
       legacy &&
         babel({
-          extensions: [".js", ".mjs", ".html", ...extensions],
+          extensions: [".js", ".mjs", ".html", ...svelteExtensions],
           babelHelpers: "runtime",
           exclude: ["node_modules/@babel/**"],
           presets: [
@@ -96,8 +102,13 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        extensions,
-        preprocess: [mdsvex(), sveltePreprocess()],
+        extensions: svelteExtensions,
+        preprocess: [
+          mdsvex({
+            extensions: mdsvexExtensions,
+          }),
+          sveltePreprocess(),
+        ],
         compilerOptions: {
           dev,
           generate: "ssr",
