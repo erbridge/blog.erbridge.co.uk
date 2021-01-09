@@ -47,7 +47,7 @@
   li a:focus,
   li a:focus-within,
   li a:hover {
-    border-left: 2px solid rgb(var(--accent-colour));
+    border-left-color: rgb(var(--accent-colour));
   }
 </style>
 

@@ -26,7 +26,7 @@
 	a:focus,
 	a:focus-within,
 	a:hover {
-		border-bottom: 2px solid rgb(var(--accent-colour));
+		border-bottom-color: rgb(var(--accent-colour));
 	}
 
 	a:not(:last-child) {

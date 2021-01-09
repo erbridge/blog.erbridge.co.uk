@@ -8,15 +8,13 @@
   --text-colour: 201, 211, 233;
   --accent-colour: 0, 255, 221;
 
+  --transition-properties: 0.5s ease-out;
+
   background-color: rgb(var(--background-colour));
   font-family: var(--body-font-family);
   font-size: 14px;
   line-height: 1.3;
   color: rgb(var(--text-colour));
-}
-
-* {
-  transition: all 0.2s;
 }
 
 body {
@@ -48,6 +46,9 @@ p:first-child {
 a {
   color: inherit;
   text-decoration: underline rgb(var(--accent-colour)) 0.1em;
+  transition: border-bottom-color var(--transition-properties),
+    border-left-color var(--transition-properties),
+    color var(--transition-properties);
 }
 
 a:active,
