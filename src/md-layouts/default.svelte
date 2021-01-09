@@ -14,6 +14,30 @@
   header p {
     color: rgba(var(--text-colour), 0.8);
   }
+
+  @media (min-width: 700px) {
+    article {
+      display: flex;
+    }
+
+    header {
+      max-width: 14rem;
+      margin-right: 2rem;
+    }
+
+    hgroup {
+      margin-top: -0.2em;
+      border-right: 2px solid rgb(var(--accent-colour));
+      padding: 0.2em 1em 3em 0;
+      position: sticky;
+      top: 0.8em;
+      will-change: transform;
+    }
+
+    section {
+      flex: 1;
+    }
+  }
 </style>
 
 <svelte:head>
