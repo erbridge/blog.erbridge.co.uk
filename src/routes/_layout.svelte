@@ -5,17 +5,25 @@
 </script>
 
 <style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
+	header {
+		max-width: 80em;
 		margin: 0 auto;
-		box-sizing: border-box;
+	}
+
+	main {
+		max-width: 58em;
+		padding: 1em;
+		margin: 0 auto;
 	}
 </style>
 
-<Nav {segment} />
+<svelte:head>
+	<title>erbridge</title>
+</svelte:head>
+
+<header>
+	<Nav {segment} />
+</header>
 
 <main>
 	<slot />
