@@ -88,3 +88,11 @@ code {
     font-size: 18px;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-colour: 178, 255, 255;
+    --text-colour: 43, 48, 59;
+    --accent-colour: 50, 71, 255;
+  }
+}
