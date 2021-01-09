@@ -17,8 +17,14 @@ const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const mdsvexExtensions = [".sveltemd"];
-const svelteExtensions = [".svelte", ...mdsvexExtensions];
+const mdsvexOptions = {
+  extensions: [".sveltemd"],
+  layout: {
+    _: path.join(__dirname, "src", "md-layouts", "default.svelte"),
+  },
+};
+
+const svelteExtensions = [".svelte", ...mdsvexOptions.extensions];
 
 const onwarn = (warning, onwarn) =>
   (warning.code === "MISSING_EXPORT" && /'preload'/.test(warning.message)) ||
@@ -32,18 +38,14 @@ export default {
     input: config.client.input().replace(/\.js$/, ".ts"),
     output: config.client.output(),
     plugins: [
+      // css({ output: "static/vendor.css" }),
       replace({
         "process.browser": true,
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
         extensions: svelteExtensions,
-        preprocess: [
-          mdsvex({
-            extensions: mdsvexExtensions,
-          }),
-          sveltePreprocess(),
-        ],
+        preprocess: [mdsvex(mdsvexOptions), sveltePreprocess()],
         compilerOptions: {
           dev,
           hydratable: true,
@@ -105,12 +107,7 @@ export default {
       }),
       svelte({
         extensions: svelteExtensions,
-        preprocess: [
-          mdsvex({
-            extensions: mdsvexExtensions,
-          }),
-          sveltePreprocess(),
-        ],
+        preprocess: [mdsvex(mdsvexOptions), sveltePreprocess()],
         compilerOptions: {
           dev,
           generate: "ssr",
