@@ -1,0 +1,236 @@
+---
+title: "how to write inclusive job descriptions"
+date: 2021-01-07
+description:
+  Diversity in your teams matters. A major factor in creating diverse and
+  inclusive teams is your hiring process, and that process starts with your job
+  description.
+crosspost:
+  from:
+    text: the dxw blog
+    href: https://www.dxw.com/2021/01/how-to-write-inclusive-job-descriptions/
+---
+
+<style>
+  ins {
+    margin: -0.1em;
+    padding: 0.1em;
+    background-color: rgb(var(--accent-colour));
+    text-decoration: none;
+    color: rgb(var(--background-colour));
+  }
+</style>
+
+So, you've got a gap in your team, or an opportunity to expand. Time to hire!
+You've read tens or hundreds of job descriptions in your career. You use those
+as a template. A paragraph or two about the organization, another couple about
+the job, and a list of all the requirements. Done.
+
+Not so fast...
+
+### Is your job description inclusive?
+
+Diversity in your teams matters (I hope I don't need to explain why). A major
+factor in creating diverse and inclusive teams is your hiring process, and that
+process starts with your job description.
+
+It takes care to write a job description well. That care is more than running it
+through language analysers like [Hemmingway](http://www.hemingwayapp.com/),
+[alex](https://alexjs.com/), the
+[Gender Decoder](http://gender-decoder.katmatfield.com/), and
+[Textio](https://textio.com/). Tools like those will help you write using
+simpler, less biased language, but it's more than just your choice of words that
+need some thought.
+
+Here are some helpful principles I've learned to use when thinking about hiring.
+I'm not an expert, but I have spent a fair amount of time thinking, reading, and
+talking about what makes a good, inclusive job description. Please use your own
+judgement when applying these, and listen to other voices, especially the voices
+of marginalized people.
+
+#### Describe the work, not the person
+
+It can be tempting to include a long list of requirements of a potential
+applicant as a way of describing the job. Instead of describing requirements,
+describe the work involved in the doing the job. What would this person do every
+day? What are the challenges they'll face? Who will they interact and work with?
+Who will support their growth and how? Most job descriptions are far too heavy
+on the "you" section and have far too little about the role.
+
+For each requirement you're thinking of adding, consider the part of the job
+that needs that skill or experience. Instead of writing a requirement of a
+person, describe the part of the job that demonstrates its need. Similar to the
+principle of "show, don't tell", describing how a skill might be used in
+practice provides more context to your future hire than a dry skill description
+ever could.
+
+A job description exists to describe the job, not the person filling it. Let a
+potential applicant evaluate it for themselves, and decide if it's what they
+want and feel qualified to do. The rest of your hiring process exists to see if
+you agree.
+
+#### Is it really a requirement?
+
+If you do have a long list of things that someone doing the job needs to know or
+have done, ask yourself about each one: is this a requirement? Would someone
+without evidenced experience of that skill be unable to do the job? Is it
+something they could learn? Does someone need experience with Photoshop, or will
+any image editing experience do? Who's more suited to the job: someone with
+experience doing a specific thing, but without much flexibility in picking up
+new things, or someone who doesn't have that experience but is keen and able to
+learn it on the job?
+
+The same thing applies to requirements like: university educated, 3 years of
+experience, must have shipped 4 products. What do requirements like these test
+for? Is someone with 3 years of experience inherently better than someone with
+less? Does a university education give someone an advantage in carrying out the
+work involved in the job?
+
+If a job description has a requirement written in it, even if it's a "soft",
+non-essential requirement, some underqualified privileged people will push the
+limits of that requirement, as career advisors teach them to do, while many
+qualified marginalized people won't feel empowered to apply. Assume some
+marginalized people will underestimate themselves. They may have been taught
+through their experiences that their skills and opinions are seen as less
+valuable than their more privileged peers. And if it's written anywhere in the
+job description, people might interpret it as a strict requirement, regardless
+of how you frame it.
+
+Requirements in job descriptions only exist to exclude people. Let your
+screening calls and interviews do that. The more applicants you get, the better
+the chance that you hire the best person for the job.
+
+#### Be specific
+
+If you ask for "experience" (and do you really need to – see above?), be
+specific about what you mean. Hopefully you know what you mean and have an idea
+of how much experience you need (if you don't, how will you be objective?).
+Write it down. Tell your applicant what you're really looking for. Different
+people will interpret "experience" in different ways. One person might take it
+to mean "have you done this thing at least once?" where another might take it as
+"do you do this every day?", so remove the ambiguity.
+
+#### Avoid jargon
+
+Use plain language to describe what you mean. It's not uncommon for people,
+especially those without formal training in a job role, to know how to do things
+without knowing the name for what they're doing. If you use buzzphrases, jargon,
+and abbreviations, you're likely to be excluding people who knew everything you
+needed except for the terminology.
+
+#### Avoid long lists
+
+Long bulleted lists are intimidating. For many, they can read like checklists or
+diagnostic criteria of mounting insecurity, and put people in the mindset of
+needing to justify themselves. Bullet points also encourage abbreviations and
+jargon (see above), where the candidate would benefit from clear, descriptive
+language. Instead of a list, write paragraphs. The more you write, the clearer
+your expectations will be (though beware of writing so much that it's a chore to
+read).
+
+### What does good look like?
+
+Putting these principles into practice, here's an example of a before and after
+for a job description we used for a Service Designer job at dxw. There's always
+room for improvement, but hopefully it helps put some of the points into
+context.
+
+#### Before
+
+As a service designer, you will work collaboratively with researchers and others
+throughout the lifecycle of a project.
+
+As our clients transform into more service-oriented organisations, you will help
+them to define their services and develop the user-centred design capabilities
+and the ways of working they need.
+
+As part of a multidisciplinary team, you will work closely with service and
+product owners, user researchers, business analysts, developers, and others to
+transform and improve services.
+
+You will be responsible for crafting hypotheses based on research insights,
+leading and designing collaborative workshops, and creating prototypes.
+
+In projects with smaller teams, you may play a dual role as a researcher,
+business analyst, or content designer.
+
+You will support other service designers building the service design community
+within dxw.
+
+Key skills: Research, synthesis, facilitation, communication and storytelling,
+visualisation, prototyping, and empathy. You:
+
+- have some experience working as a practitioner service designer
+- can work with empathy and resilience as part of a multidisciplinary, agile
+  team, sharing work in progress for early discussion and iteration with your
+  team and clients
+- understand the need to design public services that work well for all kinds of
+  users, across all the channels and support options they need, and the devices
+  and assistive technologies they use
+- think beyond the design of the product to its ongoing development and support
+  required by the organisation, working with service owners to implement
+  strategies needed to run a sustainable and successful service
+- build effective relationships with all kinds of stakeholders to understand
+  desired and acceptable outcomes, from idea generation to adoption of the
+  service or product
+- identify and find ways to raise risks, issues and areas of uncertainty and
+  constructively challenge assumptions about product, service or the
+  organisation
+- have experience of planning, gathering and synthesising research findings and
+  performance data, across end-to-end services
+- can combine evidence and experience to create ideas and make good design
+  decisions, choosing the most appropriate method for the team, project and
+  desired outcome
+- are a skilled facilitator and communicator, able to devise and share
+  narratives of current service experiences, and visions of future ones
+- can create prototypes at appropriate fidelity (visual and physical mockups,
+  code) to support experiments and tests
+
+#### After
+
+_Edits highlighted_
+
+As a service designer, you will work collaboratively with researchers and others
+throughout the lifecycle of a project.
+
+As our clients transform into more service-oriented organisations, you will help
+them to define their services and develop the user-centred design capabilities
+and the ways of working they need. <ins>You'll help design accessible public
+services that work well for all kinds of users, across all the channels and
+support options they need, including assistive technologies. The services you'll
+work on will continue to be supported and improved by the organizations they're
+built for and their design will need to support that.</ins>
+
+As part of a multidisciplinary, <ins>agile</ins> team, you will work closely
+with service and product owners, user researchers, business analysts,
+developers, and others to transform and improve services, <ins>communicating
+with empathy and resilience. You'll facilitate meetings and codesign sessions.
+You'll devise and share narratives of existing user experiences, as well as your
+visions of future ones.</ins>
+
+You will be responsible for crafting hypotheses based on research insights,
+leading and designing collaborative workshops, and creating prototypes <ins>to
+support experiments and tests. You'll plan, gather, and analyse research and
+performance data. You'll combine the evidence with your experience to make good
+design decisions and help guide the work of your team. You will need to
+challenge assumptions and determine risks and areas of uncertainty, and work
+with your team to mitigate those risks.</ins>
+
+In projects with smaller teams, you may play a dual role as a researcher,
+business analyst, or content designer.
+
+You will support other service designers building the service design community
+within dxw.
+
+_The remainder of the job description has been removed or reworded and included
+above._
+
+### A job description is only part of it
+
+There's so much more to diverse and inclusive hiring than a job description. To
+make a truly inclusive hiring process, you also need to think about where you
+advertise, any bias you have in your interviewing processes, understanding who
+your applicants are and learning from the lack of diversity, and a whole host of
+other things. But a job description sits early in the hiring pipeline. Getting
+it right unlocks the opportunity for more people to apply, and hopefully,
+gradually a more diverse team.
