@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{status} - erbridge</title>
+	<title>{status}: {error.message} - erbridge</title>
 </svelte:head>
 
 <h1>{status}</h1>

@@ -51,6 +51,10 @@
   }
 </style>
 
+<svelte:head>
+  <title>weeknotes - erbridge</title>
+</svelte:head>
+
 <section>
   <h1>weeknotes</h1>
 

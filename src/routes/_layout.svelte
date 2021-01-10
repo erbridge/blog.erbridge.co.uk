@@ -17,10 +17,6 @@
 	}
 </style>
 
-<svelte:head>
-	<title>erbridge</title>
-</svelte:head>
-
 <header>
 	<Nav {segment} />
 </header>
