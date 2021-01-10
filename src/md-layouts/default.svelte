@@ -27,6 +27,7 @@
     header {
       max-width: 14rem;
       margin-right: 2rem;
+      word-wrap: break-word;
     }
 
     hgroup {
