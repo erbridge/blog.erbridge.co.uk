@@ -12,6 +12,8 @@
 
 <style>
   header {
+    max-width: 30rem;
+    margin-left: auto;
     text-align: right;
   }
 
