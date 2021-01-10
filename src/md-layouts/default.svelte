@@ -1,9 +1,13 @@
 <script>
+  import Head from "../components/Head.svelte";
   import LongDate from "../components/LongDate.svelte";
 
   export let date;
-  export let subtitle = null;
   export let title;
+
+  export let description =
+    "Weeknotes are an opportunity to reflect on the past week, and look forward to the next one. Mine reflect on both my personal, and my professional life, so expect a mixture of software stuff, video games, public sector work, existing as a trans person, tabletop roleplaying, and whatever else claims my attention.";
+  export let subtitle = null;
 </script>
 
 <style>
@@ -40,13 +44,16 @@
   }
 </style>
 
-<svelte:head>
-  {#if subtitle}
-    <title>{title}: {subtitle} - erbridge</title>
-  {:else}
-    <title>{title} - erbridge</title>
-  {/if}
-</svelte:head>
+<Head
+  title={subtitle ? `${title}: ${subtitle}` : title}
+  type="article"
+  {description}>
+  <meta
+    property="og:article:published_time"
+    content={new Date(date).toISOString().split('T')[0]} />
+  <meta property="og:article:author" content="F" />
+  <meta property="og:article:section" content="weeknotes" />
+</Head>
 
 <article>
   <header>
