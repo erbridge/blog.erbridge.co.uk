@@ -16,6 +16,10 @@
 		list-style: none;
 	}
 
+	li:last-child {
+		margin-left: auto;
+	}
+
 	a {
 		border-bottom: 2px double rgb(var(--text-colour));
 		padding: 0.1em 0.2em;
@@ -33,10 +37,6 @@
 		margin-right: 0.5em;
 	}
 
-	div {
-		flex: 1;
-	}
-
 	[aria-current] {
 		color: rgb(var(--accent-colour));
 	}
@@ -50,8 +50,6 @@
 				aria-current={segment === 'weeknotes' ? 'page' : undefined}
 				href="weeknotes">weeknotes</a>
 		</li>
-
-		<div />
 
 		<li><a href="https://erbridge.co.uk">main site</a></li>
 	</ul>
