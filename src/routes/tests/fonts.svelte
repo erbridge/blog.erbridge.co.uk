@@ -39,10 +39,6 @@
     font-family: "Times New Roman";
   }
 
-  .georgia {
-    font-family: "Georgia";
-  }
-
   .serif {
     font-family: serif;
   }
@@ -85,7 +81,6 @@
 <div class="times-new-roman">
   a quick brown fox jumps over a lazy dog - Times New Roman
 </div>
-<div class="georgia">a quick brown fox jumps over a lazy dog - Georgia</div>
 <div class="serif">a quick brown fox jumps over a lazy dog - serif</div>
 
 <h1>monospace fonts</h1>
