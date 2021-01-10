@@ -5,15 +5,16 @@
 </script>
 
 <style>
-	header {
-		max-width: 80em;
+	header,
+	main {
+		max-width: 58rem;
+		width: 100%;
 		margin: 0 auto;
+		padding: 1rem;
 	}
 
 	main {
-		max-width: 58em;
-		padding: 1em;
-		margin: 0 auto;
+		flex: 1;
 	}
 </style>
 

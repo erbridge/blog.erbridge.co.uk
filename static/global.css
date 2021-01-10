@@ -19,8 +19,23 @@
   color: rgb(var(--text-colour));
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
+}
+
+#sapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,

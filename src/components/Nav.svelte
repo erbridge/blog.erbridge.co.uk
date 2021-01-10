@@ -4,7 +4,6 @@
 
 <style>
 	nav {
-		padding: 1.5rem 2.5rem;
 		font-family: var(--heading-font-family);
 		font-weight: 600;
 		font-size: 1.2rem;
@@ -20,6 +19,7 @@
 
 	li:not(:last-child) {
 		margin-top: 0.3em;
+		margin-top: calc(0.2em + 2px);
 	}
 
 	li:last-child {

@@ -29,7 +29,7 @@
   places I spend time. This is a collection of thoughts on how to achieve
   that." />
 
-<section>
+<header>
   <h1>inclusivity</h1>
 
   <p>
@@ -37,6 +37,6 @@
     places I spend time. This is a collection of thoughts on how to achieve
     that.
   </p>
-</section>
+</header>
 
 <PostIndex {posts} />
