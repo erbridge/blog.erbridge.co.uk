@@ -25,5 +25,6 @@ export function getAllPosts(rootPath: string) {
         .replace(ALL_PATH_SEP, "/");
 
       return { ...attributes, slug };
-    });
+    })
+    .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 }
