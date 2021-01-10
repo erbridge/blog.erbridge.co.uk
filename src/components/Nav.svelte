@@ -34,6 +34,13 @@
 		border-bottom-color: rgb(var(--accent-colour));
 	}
 
+	a[href^="http"]:active,
+	a[href^="http"]:focus,
+	a[href^="http"]:focus-within,
+	a[href^="http"]:hover {
+		border-bottom-color: rgb(var(--secondary-accent-colour));
+	}
+
 	a:not(:last-child) {
 		margin-right: 0.5em;
 	}

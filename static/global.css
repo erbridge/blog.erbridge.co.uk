@@ -8,6 +8,7 @@
   --background-colour: 43, 48, 59;
   --text-colour: 201, 211, 233;
   --accent-colour: 0, 255, 221;
+  --secondary-accent-colour: 255, 83, 187;
 
   --transition-properties: 0.5s ease-out;
 
@@ -59,6 +60,17 @@ a:hover {
   color: rgb(var(--accent-colour));
 }
 
+a[href^="http"] {
+  text-decoration-color: rgb(var(--secondary-accent-colour));
+}
+
+a[href^="http"]:active,
+a[href^="http"]:focus,
+a[href^="http"]:focus-within,
+a[href^="http"]:hover {
+  color: rgb(var(--secondary-accent-colour));
+}
+
 blockquote {
   margin-left: 2em;
   margin-right: 2em;
@@ -96,5 +108,6 @@ code {
     --background-colour: 178, 255, 255;
     --text-colour: 43, 48, 59;
     --accent-colour: 50, 71, 255;
+    --secondary-accent-colour: 255, 83, 187;
   }
 }
