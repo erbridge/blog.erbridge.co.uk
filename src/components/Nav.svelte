@@ -6,6 +6,7 @@
 	nav {
 		padding: 1.5rem 2.5rem;
 		font-family: var(--heading-font-family);
+		font-weight: 600;
 		font-size: 1.2rem;
 	}
 

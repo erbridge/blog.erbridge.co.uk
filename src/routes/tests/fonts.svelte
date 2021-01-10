@@ -1,25 +1,25 @@
 <style>
   .futura {
     font-family: Futura;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: lowercase;
   }
 
   .trebuchet-ms {
     font-family: "Trebuchet MS";
-    font-weight: 400;
+    font-weight: 600;
     text-transform: lowercase;
   }
 
   .arial {
     font-family: Arial;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: lowercase;
   }
 
   .sans-serif {
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: lowercase;
   }
 
