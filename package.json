@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "sapper dev --ext '.svelte .sveltemd'",
     "build": "sapper build --ext '.svelte .sveltemd' --legacy",
-    "export": "sapper export --ext '.svelte .sveltemd' --legacy",
+    "export": "sapper export --ext '.svelte .sveltemd' --entry '. tests/fonts' --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },

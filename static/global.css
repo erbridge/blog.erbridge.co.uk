@@ -1,8 +1,9 @@
 :root {
-  --heading-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  --body-font-family: "Cochin", "Hoefler Text", Garamond, "Times New Roman",
-    serif;
-  --monospace-font-family: "Andale Mono", "Lucida Console", monospace;
+  --heading-font-family: "Futura", "Trebuchet MS", "Arial", sans-serif;
+  --body-font-family: "Cochin", "Hoefler Text", "Garamond", "Times New Roman",
+    "Georgia", serif;
+  --monospace-font-family: "Andale Mono", "Lucida Console", "Courier New",
+    monospace;
 
   --background-colour: 43, 48, 59;
   --text-colour: 201, 211, 233;
