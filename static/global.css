@@ -87,6 +87,10 @@ blockquote p::after {
   margin-left: -0.05em;
 }
 
+cite {
+  font-style: normal;
+}
+
 code {
   font-family: var(--monospace-font-family);
 }
