@@ -12,7 +12,8 @@ export function getAllPosts(rootPath: string) {
     .map((entry) => {
       const file = fs.readFileSync(entry.path, "utf-8");
       const { attributes } = frontMatter<{
-        crosspost?: { cite: { href: string; text: string } };
+        coauthors?: { href: string; name: string }[];
+        crosspost?: { from: { href: string; text: string } };
         date: string;
         description?: string;
         title: string;
