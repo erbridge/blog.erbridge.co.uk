@@ -142,7 +142,7 @@ img {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-colour: 178, 255, 255;
+    --background-colour: 247, 232, 209;
     --text-colour: 43, 48, 59;
     --accent-colour: 50, 71, 255;
     --secondary-accent-colour: 255, 83, 187;
