@@ -59,7 +59,7 @@
 		border-left: 2px solid rgb(var(--accent-colour));
 	}
 
-	@media (min-width: 450px) {
+	@media (min-width: 550px) {
 		ul {
 			flex-direction: row;
 		}
@@ -95,6 +95,12 @@
 				rel="prefetch"
 				aria-current={segment === 'inclusivity' ? 'page' : undefined}
 				href="inclusivity">inclusivity</a>
+		</li>
+		<li>
+			<a
+				rel="prefetch"
+				aria-current={segment === 'archive' ? 'page' : undefined}
+				href="archive">the archive</a>
 		</li>
 
 		<li><a href="https://erbridge.co.uk">main site</a></li>
