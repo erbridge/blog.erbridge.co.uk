@@ -59,7 +59,7 @@
 		border-left: 2px solid rgb(var(--accent-colour));
 	}
 
-	@media (min-width: 550px) {
+	@media (min-width: 600px) {
 		ul {
 			flex-direction: row;
 		}
@@ -84,6 +84,12 @@
 
 <nav>
 	<ul>
+		<li>
+			<a
+				rel="prefetch"
+				aria-current={segment === undefined ? 'page' : undefined}
+				href=".">about</a>
+		</li>
 		<li>
 			<a
 				rel="prefetch"

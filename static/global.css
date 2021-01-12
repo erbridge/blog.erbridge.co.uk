@@ -75,14 +75,19 @@ a:hover {
   color: rgb(var(--accent-colour));
 }
 
-a[href^="http"] {
+a[href^="http"],
+a[href^="mailto"] {
   text-decoration-color: rgb(var(--secondary-accent-colour));
 }
 
 a[href^="http"]:active,
+a[href^="mailto"]:active,
 a[href^="http"]:focus,
+a[href^="mailto"]:focus,
 a[href^="http"]:focus-within,
-a[href^="http"]:hover {
+a[href^="mailto"]:focus-within,
+a[href^="http"]:hover,
+a[href^="mailto"]:hover {
   color: rgb(var(--secondary-accent-colour));
 }
 
