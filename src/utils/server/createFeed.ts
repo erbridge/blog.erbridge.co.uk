@@ -23,7 +23,11 @@ export function createFeed(type: "atom" | "json" | "rss2", slug: string) {
     const url = `${BASE_URL}/${post.slug}`;
 
     const authors: Author[] = [
-      { name: "F", email: "f@erbridge.co.uk", link: "https://erbridge.co.uk" },
+      {
+        name: "F",
+        email: "blog@erbridge.co.uk",
+        link: "https://erbridge.co.uk",
+      },
     ];
 
     if (post.coauthors) {
