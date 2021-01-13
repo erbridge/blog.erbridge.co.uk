@@ -5,26 +5,16 @@ import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import typescript from "@rollup/plugin-typescript";
 import url from "@rollup/plugin-url";
-import { mdsvex } from "mdsvex";
 import path from "path";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup.js";
-import sveltePreprocess from "svelte-preprocess";
 import pkg from "./package.json";
+import * as svelteConfig from "./svelte.config";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
-
-const mdsvexOptions = {
-  extensions: [".sveltemd"],
-  layout: {
-    _: path.join(__dirname, "src", "md-layouts", "default.svelte"),
-  },
-};
-
-const svelteExtensions = [".svelte", ...mdsvexOptions.extensions];
 
 const onwarn = (warning, onwarn) =>
   (warning.code === "MISSING_EXPORT" && /'preload'/.test(warning.message)) ||
@@ -38,14 +28,12 @@ export default {
     input: config.client.input().replace(/\.js$/, ".ts"),
     output: config.client.output(),
     plugins: [
-      // css({ output: "static/vendor.css" }),
       replace({
         "process.browser": true,
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        extensions: svelteExtensions,
-        preprocess: [mdsvex(mdsvexOptions), sveltePreprocess()],
+        ...svelteConfig,
         compilerOptions: {
           dev,
           hydratable: true,
@@ -65,17 +53,10 @@ export default {
 
       legacy &&
         babel({
-          extensions: [".js", ".mjs", ".html", ...svelteExtensions],
+          extensions: [".js", ".mjs", ".html", ...svelteConfig.extensions],
           babelHelpers: "runtime",
           exclude: ["node_modules/@babel/**"],
-          presets: [
-            [
-              "@babel/preset-env",
-              {
-                targets: "> 0.25%, not dead",
-              },
-            ],
-          ],
+          presets: ["@babel/preset-env"],
           plugins: [
             "@babel/plugin-syntax-dynamic-import",
             [
@@ -106,8 +87,7 @@ export default {
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
-        extensions: svelteExtensions,
-        preprocess: [mdsvex(mdsvexOptions), sveltePreprocess()],
+        ...svelteConfig,
         compilerOptions: {
           dev,
           generate: "ssr",
