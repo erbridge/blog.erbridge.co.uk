@@ -62,6 +62,7 @@ p:first-child {
 
 a {
   color: inherit;
+  -webkit-text-decoration: underline rgb(var(--accent-colour)) 0.1em;
   text-decoration: underline rgb(var(--accent-colour)) 0.1em;
   transition: border-bottom-color var(--transition-properties),
     border-left-color var(--transition-properties),
@@ -77,6 +78,7 @@ a:hover {
 
 a[href^="http"],
 a[href^="mailto"] {
+  -webkit-text-decoration-color: rgb(var(--secondary-accent-colour));
   text-decoration-color: rgb(var(--secondary-accent-colour));
 }
 
