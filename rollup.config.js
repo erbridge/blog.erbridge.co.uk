@@ -5,12 +5,33 @@ import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import typescript from "@rollup/plugin-typescript";
 import url from "@rollup/plugin-url";
+import autoprefixer from "autoprefixer";
+import { mdsvex } from "mdsvex";
 import path from "path";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup.js";
+import sveltePreprocess from "svelte-preprocess";
 import pkg from "./package.json";
-import * as svelteConfig from "./svelte.config";
+
+const mdsvexOptions = {
+  extensions: [".sveltemd"],
+  layout: {
+    _: path.join(__dirname, "src", "md-layouts", "default.svelte"),
+  },
+};
+
+const svelteConfig = {
+  extensions: [".svelte", ...mdsvexOptions.extensions],
+  preprocess: [
+    mdsvex(mdsvexOptions),
+    sveltePreprocess({
+      postcss: {
+        plugins: [autoprefixer],
+      },
+    }),
+  ],
+};
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
