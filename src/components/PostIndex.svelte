@@ -9,6 +9,21 @@
   }[];
 </script>
 
+<ul>
+  {#each posts as post}
+    <li>
+      <a rel="preload" href={post.slug}>
+        <h2>
+          {post.title}{#if post.subtitle}: {post.subtitle}{/if}
+        </h2>
+        <p>
+          <LongDate value={post.date} />
+        </p>
+      </a>
+    </li>
+  {/each}
+</ul>
+
 <style>
   ul {
     padding-left: 0;
@@ -40,18 +55,3 @@
     border-left-color: rgb(var(--accent-colour));
   }
 </style>
-
-<ul>
-  {#each posts as post}
-    <li>
-      <a rel="preload" href={post.slug}>
-        <h2>
-          {post.title}{#if post.subtitle}: {post.subtitle}{/if}
-        </h2>
-        <p>
-          <LongDate value={post.date} />
-        </p>
-      </a>
-    </li>
-  {/each}
-</ul>

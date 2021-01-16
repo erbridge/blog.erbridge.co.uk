@@ -83,9 +83,6 @@
   });
 </script>
 
-<time
-  datetime={date
-    .toISOString()
-    .split(
-      'T'
-    )[0]}>{formatter ? formatter.format(date) : date.toLocaleDateString()}</time>
+<time datetime={date.toISOString().split("T")[0]}
+  >{formatter ? formatter.format(date) : date.toLocaleDateString()}</time
+>

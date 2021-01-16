@@ -1,65 +1,3 @@
-<style>
-  .futura {
-    font-family: Futura;
-    font-weight: 600;
-    text-transform: lowercase;
-  }
-
-  .trebuchet-ms {
-    font-family: "Trebuchet MS";
-    font-weight: 600;
-    text-transform: lowercase;
-  }
-
-  .arial {
-    font-family: Arial;
-    font-weight: 600;
-    text-transform: lowercase;
-  }
-
-  .sans-serif {
-    font-family: sans-serif;
-    font-weight: 600;
-    text-transform: lowercase;
-  }
-
-  .cochin {
-    font-family: Cochin;
-  }
-
-  .hoefler-text {
-    font-family: "Hoefler Text";
-  }
-
-  .garamond {
-    font-family: "Garamond";
-  }
-
-  .times-new-roman {
-    font-family: "Times New Roman";
-  }
-
-  .serif {
-    font-family: serif;
-  }
-
-  .andale-mono {
-    font-family: "Andale Mono";
-  }
-
-  .lucida-console {
-    font-family: "Lucida Console";
-  }
-
-  .courier-new {
-    font-family: "Courier New";
-  }
-
-  .monospace {
-    font-family: monospace;
-  }
-</style>
-
 <h1>heading fonts</h1>
 
 <div class="futura">a quick brown fox jumps over a lazy dog - Futura</div>
@@ -132,7 +70,8 @@
   a quick brown fox jumps over a lazy dog - sans-serif-condensed (bold)
 </div>
 <div
-  style="font-family: sans-serif-condensed; font-weight: bold; font-style: italic">
+  style="font-family: sans-serif-condensed; font-weight: bold; font-style: italic"
+>
   a quick brown fox jumps over a lazy dog - sans-serif-condensed (bold, italic)
 </div>
 <div style="font-family: serif; font-style: normal">
@@ -156,3 +95,65 @@
 <div style="font-family: monospace; font-style: normal">
   a quick brown fox jumps over a lazy dog - monospace
 </div>
+
+<style>
+  .futura {
+    font-family: Futura;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .trebuchet-ms {
+    font-family: "Trebuchet MS";
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .arial {
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .sans-serif {
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .cochin {
+    font-family: Cochin;
+  }
+
+  .hoefler-text {
+    font-family: "Hoefler Text";
+  }
+
+  .garamond {
+    font-family: "Garamond";
+  }
+
+  .times-new-roman {
+    font-family: "Times New Roman";
+  }
+
+  .serif {
+    font-family: serif;
+  }
+
+  .andale-mono {
+    font-family: "Andale Mono";
+  }
+
+  .lucida-console {
+    font-family: "Lucida Console";
+  }
+
+  .courier-new {
+    font-family: "Courier New";
+  }
+
+  .monospace {
+    font-family: monospace;
+  }
+</style>

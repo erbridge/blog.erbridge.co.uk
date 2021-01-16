@@ -25,7 +25,8 @@
 <Head
   {url}
   title="the archive"
-  description="These are the miscellaneous posts I keep for posterity. Throwing things away is hard!" />
+  description="These are the miscellaneous posts I keep for posterity. Throwing things away is hard!"
+/>
 
 <header>
   <h1>the archive</h1>

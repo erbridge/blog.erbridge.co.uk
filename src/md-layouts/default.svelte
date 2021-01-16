@@ -12,6 +12,64 @@
   export let subtitle = null;
 </script>
 
+<Head
+  title={subtitle ? `${title}: ${subtitle}` : title}
+  type="article"
+  {description}
+>
+  <meta
+    property="og:article:published_time"
+    content={new Date(date).toISOString().split("T")[0]}
+  />
+
+  <meta property="og:article:author" content="F" />
+
+  {#if coauthors}
+    {#each coauthors as coauthor}
+      <meta property="og:article:author" content={coauthor.name} />
+    {/each}
+  {/if}
+</Head>
+
+<article>
+  <header>
+    <div>
+      <h1>{title}</h1>
+
+      {#if subtitle}
+        <h2>{subtitle}</h2>
+      {/if}
+
+      <p>
+        <LongDate value={date} />
+      </p>
+
+      {#if (crosspost && crosspost.from) || (coauthors && coauthors.length > 0)}
+        <aside>
+          <p>
+            This post was originally published on
+            <cite><a href={crosspost.from.href}>{crosspost.from.text}</a></cite
+            >.
+          </p>
+
+          {#if coauthors && coauthors.length > 0}
+            <p class="coauthors-intro">This post was coauthored with:</p>
+            <ul class="coauthors-list">
+              {#each coauthors as coauthor}
+                <li><a href={coauthor.href}>{coauthor.name}</a></li>
+              {/each}
+            </ul>
+          {/if}
+        </aside>
+      {/if}
+    </div>
+  </header>
+
+  <section>
+    <slot />
+  </section>
+</article>
+
 <style>
   header {
     max-width: 30rem;
@@ -69,59 +127,3 @@
     }
   }
 </style>
-
-<Head
-  title={subtitle ? `${title}: ${subtitle}` : title}
-  type="article"
-  {description}>
-  <meta
-    property="og:article:published_time"
-    content={new Date(date).toISOString().split('T')[0]} />
-
-  <meta property="og:article:author" content="F" />
-
-  {#if coauthors}
-    {#each coauthors as coauthor}
-      <meta property="og:article:author" content={coauthor.name} />
-    {/each}
-  {/if}
-</Head>
-
-<article>
-  <header>
-    <div>
-      <h1>{title}</h1>
-
-      {#if subtitle}
-        <h2>{subtitle}</h2>
-      {/if}
-
-      <p>
-        <LongDate value={date} />
-      </p>
-
-      {#if (crosspost && crosspost.from) || (coauthors && coauthors.length > 0)}
-        <aside>
-          <p>
-            This post was originally published on
-            <cite><a
-                href={crosspost.from.href}>{crosspost.from.text}</a></cite>.
-          </p>
-
-          {#if coauthors && coauthors.length > 0}
-            <p class="coauthors-intro">This post was coauthored with:</p>
-            <ul class="coauthors-list">
-              {#each coauthors as coauthor}
-                <li><a href={coauthor.href}>{coauthor.name}</a></li>
-              {/each}
-            </ul>
-          {/if}
-        </aside>
-      {/if}
-    </div>
-  </header>
-
-  <section>
-    <slot />
-  </section>
-</article>

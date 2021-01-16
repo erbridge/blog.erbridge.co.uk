@@ -25,9 +25,8 @@
 <Head
   {url}
   title="inclusivity"
-  description="I work hard to encourage better inclusivity in services I help build, and
-  places I spend time. This is a collection of thoughts on how to achieve
-  that." />
+  description="I work hard to encourage better inclusivity in services I help build, and places I spend time. This is a collection of thoughts on how to achieve that."
+/>
 
 <header>
   <h1>inclusivity</h1>
