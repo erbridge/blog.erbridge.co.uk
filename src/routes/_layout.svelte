@@ -44,6 +44,7 @@
 
     <p>
       <a
+        rel="external"
         href="https://us7.campaign-archive.com/home/?u=8ee667c5a6d555a16190c31ed&id=98f8fa63c9"
         >View previous emails.</a
       >

@@ -48,7 +48,10 @@
         <aside>
           <p>
             This post was originally published on
-            <cite><a href={crosspost.from.href}>{crosspost.from.text}</a></cite
+            <cite
+              ><a rel="external" href={crosspost.from.href}
+                >{crosspost.from.text}</a
+              ></cite
             >.
           </p>
 
@@ -56,7 +59,11 @@
             <p class="coauthors-intro">This post was coauthored with:</p>
             <ul class="coauthors-list">
               {#each coauthors as coauthor}
-                <li><a href={coauthor.href}>{coauthor.name}</a></li>
+                <li>
+                  <a rel="author external" href={coauthor.href}
+                    >{coauthor.name}</a
+                  >
+                </li>
               {/each}
             </ul>
           {/if}

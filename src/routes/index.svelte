@@ -12,12 +12,12 @@
 
 <p>
   If you’re looking for more of a portfolio, try the
-  <a href="https://erbridge.co.uk">main site</a>.
+  <a rel="external me" href="https://erbridge.co.uk">main site</a>.
 </p>
 
 <p>
   If you’d like to chat about anything I’ve written,
-  <a href="https://twitter.com/erbridge">tweet or DM me</a>
+  <a rel="external me" href="https://twitter.com/erbridge">tweet or DM me</a>
   or
   <a href="mailto:blog@erbridge.co.uk">email me</a>.
 </p>

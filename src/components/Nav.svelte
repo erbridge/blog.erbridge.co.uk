@@ -33,7 +33,7 @@
       >
     </li>
 
-    <li><a href="https://erbridge.co.uk">main site</a></li>
+    <li><a rel="external me" href="https://erbridge.co.uk">main site</a></li>
   </ul>
 </nav>
 
