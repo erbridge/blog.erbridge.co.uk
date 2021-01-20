@@ -1,5 +1,3 @@
-<h1>about</h1>
-
 <p>Hi! I’m F :wave:</p>
 
 <p>
