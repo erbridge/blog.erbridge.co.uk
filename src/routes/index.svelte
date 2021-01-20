@@ -1,3 +1,9 @@
+<script lang="ts">
+  import Head from "../components/Head.svelte";
+</script>
+
+<Head />
+
 <p>Hi! I’m F :wave:</p>
 
 <p>

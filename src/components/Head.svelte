@@ -1,18 +1,24 @@
 <script lang="ts">
-  export let title: string;
-
   export let type: string = "website";
+
   export let description: string | null = null;
   export let image: string | null = null;
+  export let title: string | null = null;
   export let url: string | null = null;
 </script>
 
 <svelte:head>
-  <title>{title} - erbridge</title>
-  <meta property="og:title" content={title} />
+  {#if title}
+    <title>{title} - erbridge</title>
+    <meta property="og:title" content={title} />
+  {:else}
+    <title>erbridge</title>
+  {/if}
 
-  <meta name="description" content={description || title} />
-  <meta property="og:description" content={description || title} />
+  {#if description || title}
+    <meta name="description" content={description || title} />
+    <meta property="og:description" content={description || title} />
+  {/if}
 
   <meta property="og:type" content={type} />
 
