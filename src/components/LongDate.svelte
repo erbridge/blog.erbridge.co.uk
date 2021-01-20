@@ -1,4 +1,9 @@
 <script lang="ts">
+  import { shouldPolyfill as shouldPolyfillDateTimeFormat } from "@formatjs/intl-datetimeformat/should-polyfill";
+  import { shouldPolyfill as shouldPolyfillGetCanonicalLocales } from "@formatjs/intl-getcanonicallocales/should-polyfill";
+  import { shouldPolyfill as shouldPolyfillLocale } from "@formatjs/intl-locale/should-polyfill";
+  import { shouldPolyfill as shouldPolyfillNumberFormat } from "@formatjs/intl-numberformat/should-polyfill";
+  import { shouldPolyfill as shouldPolyfillPluralRules } from "@formatjs/intl-pluralrules/should-polyfill";
   import { onMount } from "svelte";
 
   export let value: string;
@@ -21,41 +26,25 @@
   onMount(async () => {
     await Promise.all([
       async () => {
-        const { shouldPolyfill } = await import(
-          "@formatjs/intl-getcanonicallocales/should-polyfill"
-        );
-
-        if (shouldPolyfill()) {
+        if (shouldPolyfillGetCanonicalLocales()) {
           await import("@formatjs/intl-getcanonicallocales/polyfill");
         }
       },
 
       async () => {
-        const { shouldPolyfill } = await import(
-          "@formatjs/intl-locale/should-polyfill"
-        );
-
-        if (shouldPolyfill()) {
+        if (shouldPolyfillLocale()) {
           await import("@formatjs/intl-locale/polyfill");
         }
       },
 
       async () => {
-        const { shouldPolyfill } = await import(
-          "@formatjs/intl-pluralrules/should-polyfill"
-        );
-
-        if (shouldPolyfill()) {
+        if (shouldPolyfillPluralRules()) {
           await import("@formatjs/intl-pluralrules/polyfill");
         }
       },
 
       async () => {
-        const { shouldPolyfill } = await import(
-          "@formatjs/intl-numberformat/should-polyfill"
-        );
-
-        if (shouldPolyfill()) {
+        if (shouldPolyfillNumberFormat()) {
           await import("@formatjs/intl-numberformat/polyfill");
         }
 
@@ -65,11 +54,7 @@
       },
 
       async () => {
-        const { shouldPolyfill } = await import(
-          "@formatjs/intl-datetimeformat/should-polyfill"
-        );
-
-        if (shouldPolyfill()) {
+        if (shouldPolyfillDateTimeFormat()) {
           await import("@formatjs/intl-datetimeformat/polyfill");
         }
 
