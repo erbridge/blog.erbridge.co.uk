@@ -2,10 +2,26 @@
   import Nav from "../components/Nav.svelte";
 
   export let segment: string;
+
+  const internalLinks: {
+    href: string;
+    segment: string | undefined;
+    label?: string;
+  }[] = [
+    { href: ".", segment: undefined, label: "about" },
+    { href: "weeknotes", segment: "weeknotes" },
+    { href: "inclusivity", segment: "inclusivity" },
+    { href: "archive", segment: "archive", label: "the archive" },
+  ];
+  const externalLink = {
+    href: "https://erbridge.co.uk",
+    label: "main site",
+    rel: ["me"],
+  };
 </script>
 
 <header>
-  <Nav {segment} />
+  <Nav {segment} {internalLinks} {externalLink} />
 </header>
 
 <main>

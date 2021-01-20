@@ -1,39 +1,31 @@
 <script lang="ts">
   export let segment: string;
+  export let internalLinks: {
+    href: string;
+    segment: string | undefined;
+    label?: string;
+  }[];
+  export let externalLink: { href: string; label: string; rel?: string[] };
 </script>
 
 <nav>
   <ul>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === undefined ? "page" : undefined}
-        href=".">about</a
-      >
-    </li>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === "weeknotes" ? "page" : undefined}
-        href="weeknotes">weeknotes</a
-      >
-    </li>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === "inclusivity" ? "page" : undefined}
-        href="inclusivity">inclusivity</a
-      >
-    </li>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === "archive" ? "page" : undefined}
-        href="archive">the archive</a
-      >
-    </li>
+    {#each internalLinks as link}
+      <li>
+        <a
+          rel="prefetch"
+          aria-current={segment === link.segment ? "page" : undefined}
+          href={link.href}>{link.label || link.href}</a
+        >
+      </li>
+    {/each}
 
-    <li><a rel="external me" href="https://erbridge.co.uk">main site</a></li>
+    <li>
+      <a
+        rel="external{externalLink.rel ? ` ${externalLink.rel.join(' ')}` : ''}"
+        href={externalLink.href}>{externalLink.label}</a
+      >
+    </li>
   </ul>
 </nav>
 
