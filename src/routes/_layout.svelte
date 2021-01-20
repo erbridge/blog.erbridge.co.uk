@@ -52,6 +52,16 @@
   </form>
 </aside>
 
+<aside>
+  <ul>
+    <li>
+      <a rel="external me" href="https://twitter.com/erbridge">twitter</a>
+    </li>
+    <li><a rel="external me" href="https://github.com/erbridge">github</a></li>
+    <li><a href="mailto:blog@erbridge.co.uk">email</a></li>
+  </ul>
+</aside>
+
 <style>
   header,
   main,
@@ -98,5 +108,13 @@
 
   input::placeholder {
     opacity: 0.8;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
   }
 </style>
