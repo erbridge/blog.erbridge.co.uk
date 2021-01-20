@@ -13,7 +13,7 @@
 </script>
 
 <Head
-  title={subtitle ? `${title}: ${subtitle}` : title}
+  title={(subtitle ? `${title}: ${subtitle}` : title).toLowerCase()}
   type="article"
   {description}
 >
