@@ -12,7 +12,7 @@
 <ul>
   {#each posts as post}
     <li>
-      <a rel="prefetch" href={post.slug}>
+      <a sapper:prefetch href={post.slug}>
         <h2>
           {post.title}{#if post.subtitle}: {post.subtitle}{/if}
         </h2>
