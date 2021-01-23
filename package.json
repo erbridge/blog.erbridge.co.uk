@@ -36,7 +36,7 @@
     "@types/node": "^14.14.22",
     "@types/polka": "^0.5.2",
     "autoprefixer": "^10.2.3",
-    "feed": "^4.2.1",
+    "feed": "^4.2.2",
     "front-matter": "^4.0.2",
     "mdsvex": "^0.8.9",
     "normalize.css": "^8.0.1",
