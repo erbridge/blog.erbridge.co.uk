@@ -13,7 +13,7 @@
     {#each internalLinks as link}
       <li>
         <a
-          rel="prefetch"
+          sapper:prefetch
           aria-current={segment === link.segment ? "page" : undefined}
           href={link.href}>{link.label || link.href}</a
         >
