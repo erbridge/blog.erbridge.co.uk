@@ -17,7 +17,7 @@ import pkg from "./package.json";
 const mdsvexOptions = {
   extensions: [".sveltemd"],
   layout: {
-    _: path.join(__dirname, "src", "md-layouts", "default.svelte"),
+    _: path.join(__dirname, "src", "layouts", "post.svelte"),
   },
 };
 
