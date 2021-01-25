@@ -10,7 +10,7 @@ polka()
   .use(
     compression({ threshold: 0 }),
     sirv("static", { dev }),
-    sapper.middleware()
+    (sapper.middleware() as unknown) as polka.Middleware
   )
   .listen(PORT, (err) => {
     if (err) {
