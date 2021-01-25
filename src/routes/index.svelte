@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Head from "../components/Head.svelte";
+  import { Head } from "@erbridge/website-theme";
 </script>
 
 <Head />

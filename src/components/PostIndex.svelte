@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LongDate from "./LongDate.svelte";
+  import { LongDate } from "@erbridge/website-theme";
 
   export let posts: {
     slug: string;

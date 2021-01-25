@@ -16,10 +16,10 @@ crosspost:
 ---
 
 <script>
+  import { Figure } from "@erbridge/website-theme";
   import image1 from "images/inclusivity/inclusive-design-1.jpg";
   import image2 from "images/inclusivity/inclusive-design-2.jpg";
   import image3 from "images/inclusivity/inclusive-design-3.jpg";
-  import Figure from "../../../components/Figure.svelte";
 </script>
 
 Last week we started looking at

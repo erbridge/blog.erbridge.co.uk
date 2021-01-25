@@ -4,10 +4,10 @@ date: 2016-04-28
 ---
 
 <script>
-  import darkSoulsYouDied from "images/repeated-failure/dark-souls-you-died.jpg"
-  import denmanDarkSouls from "images/repeated-failure/denman-dark-souls.jpg"
-  import hackersMovie from "images/repeated-failure/hackers-movie.jpg"
-  import Figure from "../../components/Figure.svelte";
+  import { Figure } from "@erbridge/website-theme";
+  import darkSoulsYouDied from "images/repeated-failure/dark-souls-you-died.jpg";
+  import denmanDarkSouls from "images/repeated-failure/denman-dark-souls.jpg";
+  import hackersMovie from "images/repeated-failure/hackers-movie.jpg";
 </script>
 
 Lately I have been thinking about introductions to games, particularly learning

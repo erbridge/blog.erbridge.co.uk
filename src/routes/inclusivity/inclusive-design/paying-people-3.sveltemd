@@ -15,10 +15,10 @@ crosspost:
 ---
 
 <script>
+  import { Figure } from "@erbridge/website-theme";
   import image4 from "images/inclusivity/inclusive-design-4.png";
   import image5 from "images/inclusivity/inclusive-design-5.jpg";
   import image6 from "images/inclusivity/inclusive-design-6.jpg";
-  import Figure from "../../../components/Figure.svelte";
 </script>
 
 [Last week](inclusivity/inclusive-design/paying-people-2) we looked at why off

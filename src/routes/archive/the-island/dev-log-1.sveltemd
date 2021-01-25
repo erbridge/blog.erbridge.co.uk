@@ -5,11 +5,11 @@ date: 2015-04-03
 ---
 
 <script>
-  import godotReloadPrompt from "images/the-island/dev-log-1/godot-reload-prompt.jpg"
-  import godotTestScene from "images/the-island/dev-log-1/godot-test-scene.jpg"
-  import ue4NewProject from "images/the-island/dev-log-1/ue4-new-project.jpg"
-  import ue4StartScreen from "images/the-island/dev-log-1/ue4-start-screen.jpg"
-  import Figure from "../../../components/Figure.svelte";
+  import { Figure } from "@erbridge/website-theme";
+  import godotReloadPrompt from "images/the-island/dev-log-1/godot-reload-prompt.jpg";
+  import godotTestScene from "images/the-island/dev-log-1/godot-test-scene.jpg";
+  import ue4NewProject from "images/the-island/dev-log-1/ue4-new-project.jpg";
+  import ue4StartScreen from "images/the-island/dev-log-1/ue4-start-screen.jpg";
 </script>
 
 We've already decided we're going to make _The Island_ in 3D, so picking an

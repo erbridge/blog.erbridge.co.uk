@@ -11,8 +11,8 @@ description:
 ---
 
 <script>
+  import { Figure } from "@erbridge/website-theme";
   import apple from "images/weeknotes/002/apple.jpg";
-  import Figure from "../../components/Figure.svelte";
 </script>
 
 ### life nonsense

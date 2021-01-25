@@ -4,13 +4,13 @@ date: 2016-02-23
 ---
 
 <script>
-  import blindfieldInPlay from "images/splash-jam-2016/blindfield-in-play.jpg"
-  import evenMoreFjords from "images/splash-jam-2016/even-more-fjords.jpg"
-  import fjords from "images/splash-jam-2016/fjords.jpg"
-  import fjordsFromTheAir from "images/splash-jam-2016/fjords-from-the-air.jpg"
-  import moreFjords from "images/splash-jam-2016/more-fjords.jpg"
-  import tromsoMap from "images/splash-jam-2016/tromso-map.jpg"
-  import Figure from "../../components/Figure.svelte";
+  import { Figure } from "@erbridge/website-theme";
+  import blindfieldInPlay from "images/splash-jam-2016/blindfield-in-play.jpg";
+  import evenMoreFjords from "images/splash-jam-2016/even-more-fjords.jpg";
+  import fjords from "images/splash-jam-2016/fjords.jpg";
+  import fjordsFromTheAir from "images/splash-jam-2016/fjords-from-the-air.jpg";
+  import moreFjords from "images/splash-jam-2016/more-fjords.jpg";
+  import tromsoMap from "images/splash-jam-2016/tromso-map.jpg";
 </script>
 
 Over the weekend, me and 100 other game developers took a cruise ship through

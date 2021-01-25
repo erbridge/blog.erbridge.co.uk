@@ -5,11 +5,11 @@ date: 2016-02-26
 ---
 
 <script>
-  import landscape from "images/skald/episode-1/landscape.gif"
-  import routing from "images/skald/episode-1/routing.gif"
-  import textures from "images/skald/episode-1/textures.jpg"
-  import waves from "images/skald/episode-1/waves.gif"
-  import Figure from "../../../components/Figure.svelte";
+  import { Figure } from "@erbridge/website-theme";
+  import landscape from "images/skald/episode-1/landscape.gif";
+  import routing from "images/skald/episode-1/routing.gif";
+  import textures from "images/skald/episode-1/textures.jpg";
+  import waves from "images/skald/episode-1/waves.gif";
 </script>
 
 [Luke](https://www.luketovee.com/) and I spent a recent weekend jamming on

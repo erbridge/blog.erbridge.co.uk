@@ -1,6 +1,5 @@
 <script>
-  import Head from "../components/Head.svelte";
-  import LongDate from "../components/LongDate.svelte";
+  import { Head, LongDate } from "@erbridge/website-theme";
 
   export let date;
   export let title;
