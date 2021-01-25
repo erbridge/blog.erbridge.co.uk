@@ -8,7 +8,6 @@
 </script>
 
 <script lang="ts">
-  import { Head } from "@erbridge/website-theme";
   import PostIndex from "../../components/PostIndex.svelte";
 
   export let posts: {
@@ -19,18 +18,15 @@
   }[];
 </script>
 
-<Head
+<PostIndex
   title="the archive"
   description="These are the miscellaneous posts I keep for posterity. Throwing things away is hard!"
-/>
-
-<header>
+  {posts}
+>
   <h1>the archive</h1>
 
   <p>
     These are the miscellaneous posts I keep for posterity. Throwing things away
     is hard!
   </p>
-</header>
-
-<PostIndex {posts} />
+</PostIndex>

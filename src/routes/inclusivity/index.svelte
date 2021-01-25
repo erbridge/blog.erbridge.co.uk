@@ -8,7 +8,6 @@
 </script>
 
 <script lang="ts">
-  import { Head } from "@erbridge/website-theme";
   import PostIndex from "../../components/PostIndex.svelte";
 
   export let posts: {
@@ -19,12 +18,11 @@
   }[];
 </script>
 
-<Head
+<PostIndex
   title="inclusivity"
   description="I work hard to encourage better inclusivity in services I help build, and places I spend time. This is a collection of thoughts on how to achieve that."
-/>
-
-<header>
+  {posts}
+>
   <h1>inclusivity</h1>
 
   <p>
@@ -32,6 +30,4 @@
     places I spend time. This is a collection of thoughts on how to achieve
     that.
   </p>
-</header>
-
-<PostIndex {posts} />
+</PostIndex>

@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { LongDate } from "@erbridge/website-theme";
+  import { Head, LongDate } from "@erbridge/website-theme";
 
+  export let title: string;
+  export let description: string;
   export let posts: {
     slug: string;
     date: string;
@@ -8,6 +10,12 @@
     subtitle?: string;
   }[];
 </script>
+
+<Head {title} {description} />
+
+<header>
+  <slot />
+</header>
 
 <ul>
   {#each posts as post}
