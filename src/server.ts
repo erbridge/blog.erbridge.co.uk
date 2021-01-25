@@ -12,7 +12,7 @@ polka()
     sirv("static", { dev }),
     (sapper.middleware() as unknown) as polka.Middleware
   )
-  .listen(PORT, (err) => {
+  .listen(PORT, (err: any) => {
     if (err) {
       console.log("error", err);
     }
