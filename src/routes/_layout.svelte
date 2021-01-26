@@ -46,10 +46,12 @@
       </p>
 
       <p>
-        <input type="email" name="EMAIL" placeholder="name@example.com" /><input
-          type="submit"
-          value="subscribe"
-        />
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="name@example.com"
+          aria-label="email address"
+        /><input type="submit" value="subscribe" aria-label="subscribe" />
       </p>
 
       <p>
