@@ -97,6 +97,11 @@
     color: rgb(var(--secondary-accent-colour));
   }
 
+  input:focus {
+    outline-style: dashed;
+    outline-color: rgb(var(--secondary-accent-colour));
+  }
+
   input[type="email"] {
     text-align: right;
   }
