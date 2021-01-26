@@ -85,7 +85,7 @@
     border-bottom: 2px solid rgb(var(--secondary-accent-colour));
     padding: 0.5em;
     vertical-align: bottom;
-    background-color: rgb(var(--background-colour));
+    background-color: transparent;
     color: rgb(var(--text-colour));
     transition: color var(--transition-properties);
   }
@@ -98,7 +98,6 @@
   }
 
   input[type="email"] {
-    outline: none;
     text-align: right;
   }
 
