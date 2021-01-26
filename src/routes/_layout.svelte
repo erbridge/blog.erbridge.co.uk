@@ -34,7 +34,7 @@
       method="post"
       target="_blank"
     >
-      <h1>get email updates</h1>
+      <h1 id="email-heading">get email updates</h1>
 
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <p style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -50,8 +50,8 @@
           type="email"
           name="EMAIL"
           placeholder="name@example.com"
-          aria-label="email address"
-        /><input type="submit" value="subscribe" aria-label="subscribe" />
+          aria-labelledby="email-heading"
+        /><input type="submit" value="subscribe" />
       </p>
 
       <p>
