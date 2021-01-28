@@ -4,9 +4,9 @@ subtitle: The Story Unfolds
 date: 2016-03-07
 ---
 
-Over the weekend, I began looking into the storytelling aspects of _Skald_. I
+Over the weekend, I began looking into the storytelling aspects of Skald. I
 consider this to be the most ambitious aspect of the project, or at least the
-most risky. What we want to do involves _Natural Language Processing_ (NLP) used
+most risky. What we want to do involves Natural Language Processing (NLP) used
 in a way, that as far as I can tell from my limited research, hasn't been done
 before. And I have no idea how any of it works.
 
@@ -41,8 +41,8 @@ all a bit better.
 
 So after picking [Gensim](https://radimrehurek.com/gensim/) as the library to
 work with, based on some keywords that I'd come across already appeared in its
-docs (_information retrieval_, _Latent Semantic Analysis_, _Latent Dirichlet
-Allocation_ - did I mention I don't know what I'm doing?), I built a quick
+docs (information retrieval, Latent Semantic Analysis, Latent Dirichlet
+Allocation - did I mention I don't know what I'm doing?), I built a quick
 [Flask](http://flask.pocoo.org/) app and set to work learning about NLP.
 
 It turns out that it's sorcery.
@@ -50,8 +50,8 @@ It turns out that it's sorcery.
 After spending a few hours following
 [Gensim's tutorials](https://radimrehurek.com/gensim/tutorial.html), I had less
 than 100 (verbose) lines of code that would tell me how similar a line of text
-is to a bunch of other lines of text (documents). Using a thing called _Latent
-Semantic Analysis_, we can do this by looking at the semantic similarity between
+is to a bunch of other lines of text (documents). Using a thing called Latent
+Semantic Analysis, we can do this by looking at the semantic similarity between
 the two. In other words, we can look at the "meaning" of the documents (or some
 statistical approximation of it - I have yet to look behind the curtain) to work
 out if the two are similar. And with the example data, this even found that the

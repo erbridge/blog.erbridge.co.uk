@@ -12,8 +12,8 @@ date: 2015-04-03
   import ue4StartScreen from "images/the-island/dev-log-1/ue4-start-screen.jpg";
 </script>
 
-We've already decided we're going to make _The Island_ in 3D, so picking an
-engine is an obvious starting point. As a Linux user (and reluctant Windows dual
+We've already decided we're going to make The Island in 3D, so picking an engine
+is an obvious starting point. As a Linux user (and reluctant Windows dual
 booter), I need an engine that I can develop on Linux with. I've used Unity on
 OS X in the past, and its richly featured editor has spoiled my expectations of
 what an engine should deliver. That coupled with the need for 3D support doesn't
