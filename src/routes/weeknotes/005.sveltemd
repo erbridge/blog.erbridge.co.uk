@@ -1,0 +1,125 @@
+---
+title: weeknotes 5
+subtitle: actively engaged
+date: 2021-02-05
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+---
+
+### ynab
+
+I use [YNAB](https://ynab.com/referral/?ref=FZe5eTRzrmCoF50t) for budgeting, and
+the tool I used to automate account syncing
+([Sync for YNAB](https://syncforynab.com/)) stopped actually syncing. Rather
+than paying for a service that's been pretty flaky in general (I've noticed
+missing transactions every now and then causing budgets to drift), I decided to
+see how hard it would be to build my own.
+
+My main account is with Monzo, and they have a fairly standard
+[RESTful API](https://docs.monzo.com/). YNAB also has an
+[API](https://api.youneedabudget.com/) and a
+[JS library](https://api.youneedabudget.com/#client-javascript) to wrap it. So,
+on the weekend, I [built something](https://github.com/erbridge/budget-sync) to
+sync the two, running every hour in a GitHub Actions workflow. Because it runs
+headless and just for me, I managed to dodge the OAuth bullet by using personal
+access tokens and GitHub's secrets. It's entirely configured by environment
+variables, so if this also interests you (and you're technically inclined), you
+should be able to fork the repository, set up the environment, and have it work
+for you, too! Although I probably need to implement proper OAuth for Monzo to
+stop you needing to update the token every couple of days...
+
+I have some credit card debt and another current account that I track but rarely
+make transactions in, so I don't mind maintaining those manually. I opted for
+building up generic interfaces for accounts and budgets, so it _should_ be
+relatively straightforward to make more things work.
+
+### mortgage
+
+My fixed rate term ended a while ago, and I haven't had the energy to try to
+work out how to remortgage again. This is another place where my name is still
+wrong, because of archaic systems...
+
+I tried out [Habito](https://www.habito.com/) and my first interaction with a
+human was them denying that my name is my real name. :sigh:
+
+I got through the process in the end though. Just waiting for them to search the
+market for me.
+
+### line management
+
+I want to be a more actively engaged line manager. I'm quite disconnected from
+what people are working on, day to day, and I want to improve that. So I'm going
+to start going to show and tells for the projects I'm not working on. I'll
+probably ask the people I manage to recommend particularly interesting sprints,
+but my aim is to watch a show and tell for someone's team at least once every 3
+sprints.
+
+### ruby build time
+
+Why does Ruby take so long to install?! Every time I start a new Ruby project, I
+end up waiting an hour for The latest version of Ruby to install (this time
+`3.0.0`).
+
+### hmrc
+
+The [saga](weeknotes/001) continues with HMRC
+[flat out rejecting](https://twitter.com/erbridge/status/1356644492758179841) my
+latest attempt to get my name changed... Their Twitter account's advice: write
+them a letter that they will probably not respond to for the same reasons they
+had issues with every other attempt. GDPR grants a
+[right to rectification](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-rectification/),
+which I am being denied.
+
+### quiet week
+
+3 of the 4 concurrent clients didn't need much of my time at all this week,
+which was nice. I spent the time working on progression framework stuff and
+making our monthly financial reporting process more automatic.
+
+### progression framework
+
+We've been doing a bunch of work on progress frameworks at dxw. We built one for
+technology that we've been using for the last year or so for a subset of the
+team, but it's too granualar and skills based. So we've been working on
+something a bit higher level and a better connected to what we actually need
+from technologists at certain levels.
+
+I did some work on polishing the framework up this week, and we're now ready to
+start onboarding the technology group! It's definitely not "done", but the best
+way to learn how good a thing is is to use it.
+
+Sally Lait wrote
+[an excellent article](https://sallylait.com/blog/2020/11/21/introducing-a-progression-framework/)
+about essentially the same journey that has been really useful for framing our
+thoughts.
+
+### entertainment
+
+The Expanse! Best sci-fi on TV in a long time.
+
+I've also been playing a lot of Heaven's Vault, and it's really really good. I
+finished it and immediately jumped into a New Game+, which I never do. Plus, I'm
+convinced that the actor who plays Naomi in The Expanse is the voice actor for
+Aliya (they aren't, but they fooled me).
+
+### reading
+
+I'm really bad about finding time to read. I enjoy reading, but never seem to
+find an opportunity to start. I'm going to start setting aside 30 minutes at the
+end of my work day to read work-related books, starting with The Manager's Path
+by Camille Fournier. That might also encourage me to actually stop at the end of
+the day.
+
+Recommend me books to read on being a good manager or technologist!
+
+### rust
+
+I've started learning Rust (again). [James](https://twitter.com/floppy) and I
+have set aside an hour every Friday to do stuff at the same time as each other.
+To start with, we're both going through the
+[Exercism course](https://exercism.io/tracks/rust), which I'm enjoying (1 hour
+in).
