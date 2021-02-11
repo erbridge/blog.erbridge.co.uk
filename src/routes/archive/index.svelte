@@ -1,15 +1,16 @@
 <script context="module" lang="ts">
-  export async function preload() {
+  import type { Preload } from "@sapper/common";
+  import PostIndex from "../../components/PostIndex.svelte";
+
+  export const preload: Preload = async function (this, _page, _session) {
     const res = await this.fetch("archive.json");
     const posts = await res.json();
 
     return { posts };
-  }
+  };
 </script>
 
 <script lang="ts">
-  import PostIndex from "../../components/PostIndex.svelte";
-
   export let posts: {
     slug: string;
     date: string;
