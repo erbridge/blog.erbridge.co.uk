@@ -1,6 +1,5 @@
 <script lang="ts">
   import { BaseLayout } from "@erbridge/website-theme";
-  import EmailSignup from "../components/EmailSignup.svelte";
 
   export let segment: string;
 
@@ -28,15 +27,4 @@
   {externalLink}
 >
   <slot slot="main" />
-  <aside slot="aside"><EmailSignup /></aside>
 </BaseLayout>
-
-<style>
-  aside {
-    max-width: 58rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: right;
-  }
-</style>
