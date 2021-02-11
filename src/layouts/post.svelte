@@ -8,6 +8,8 @@
   export let crosspost = null;
   export let description = null;
   export let subtitle = null;
+  export let previous = null;
+  export let next = null;
 </script>
 
 <Head
@@ -67,11 +69,29 @@
           {/if}
         </aside>
       {/if}
+
+      {#if previous || next}
+        <aside>
+          <p>This post is part of a series.</p>
+          <p>
+            {#if previous}<a rel="prev" href={previous}>« previous</a>{/if}
+            {#if next}<a rel="next" href={next}>next »</a>{/if}
+          </p>
+        </aside>
+      {/if}
     </div>
   </header>
 
   <section>
     <slot />
+
+    {#if previous || next}
+      <aside>
+        {#if previous}<a rel="prev" href={previous}>« previous post in series</a
+          >{/if}
+        {#if next}<a rel="next" href={next}>next post in series »</a>{/if}
+      </aside>
+    {/if}
   </section>
 </article>
 
@@ -101,6 +121,12 @@
     padding-left: 0;
     list-style: none;
     color: rgba(var(--text-colour), 0.8);
+  }
+
+  section > aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: 700px) {
