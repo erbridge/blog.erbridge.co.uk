@@ -1,0 +1,105 @@
+---
+title: weeknotes 6
+subtitle: trans liberation
+date: 2021-02-12
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: weeknotes/005
+# next: weeknotes/007
+---
+
+### trans liberation
+
+I read this
+[really powerful article](https://harryjosiegiles.medium.com/trans-in-the-uk-what-the-hell-are-we-going-to-do-73fef741cef6)
+by [Harry Josephine Giles](https://harryjosephine.com/) calling for "trans
+liberation" over "trans rights". It neatly summarizes the struggles trans people
+face in the UK and offers practical suggestions of what to do about it. Highly
+worth reading, cis or trans! They posted a
+[follow up thread](https://twitter.com/HarryJosieGiles/status/1358821448236863488)
+on Twitter about it.
+
+It reminded me that I've been meaning to do something about wealth
+redistribution, particularly around trans healthcare. I'm fortunate enough to be
+in a well paid job with relatively low outgoings, so I can afford to import
+medication from the Pacific and see private medical professionals. Not everyone
+can do that, so I'd like to set up a system to connect people with resources to
+people without. If you'd like to help, please get in touch!
+
+### the managers path
+
+I've been reading The Manager's Path by Camille Fournier, and I'm struggling to
+put it in the context of an agency like dxw. We don't have fixed teams that
+people join for years on end, and someone's manager rarely works with them on a
+project directly, so managers don't get to directly see the impact of the work
+of the people they manage. Maybe that's actually a fault in our approach,
+though. Maybe managers _should_ work directly with the people they manage
+sometimes. :thinking_face:
+
+### new mac
+
+My new MacBook Air arrived and I went for convenient cruft migration over a more
+manual fresh clean install, which was mostly painless even if it did take a few
+hours. I got in a bit of a catch-22 needing to install Rosetta 2 to run `zsh`
+with my default shell set to `zsh`, which meant I couldn't run
+`softwareupdate --install-rosetta` like I needed to. That took a minute or two
+to work out (I configured iTerm to run with a custom shell of `/bin/bash`) and
+installing an update blew it away, so I had to do it again. I hope that's not
+going to be a feature of every update...
+
+Turns out, that meant I was running in `x86_64` mode instead of `arm64`. The
+real fix involved starting the terminal into `bash`, installing a fresh copy of
+Homebrew, uninstalling the old copy, and reinstalling all of the packages.
+
+Other than that, I needed to add my Alfred licence key in manually and fix the
+keybindings, but the rest seemed to transfer fine. I was expecting to need to
+hold on to the old MacBook for a while in case I needed things from it, but I
+don't think I'll need to this time.
+
+The keyboard is a bit squishier, but it's also a lot quieter, which I
+appreciate. I keep missing the left and right arrow keys since they made them
+skinny, though.
+
+### nqr
+
+Apparently, not only does the
+[software I built when learning to code](https://github.com/erbridge/NQr) still
+run, it runs for months on end with daily use, not a single issue, and next to
+no maintenance. How is the first thing I ever built also the most reliable?
+Without any tests as well!
+
+First commit was in July 2010. Have I really been programming for 10.5 years?!
+
+### mortgage
+
+[It's progressing](weeknotes/005) and the Habito team have been really
+accomodating of my name mess, which is a breath of fresh air. I feel well looked
+after so far.
+
+Last minute update: my name doesn't conform to the digital systems for online
+application (who's surprized?), so they can't do it. They did give me some
+advice for my own way forwards, which probably involves going to an actual bank
+and talking to an actual human. :sigh:
+
+### equity by design
+
+Today was the first day of training with
+[Rooted by Design](https://www.rootedbydesign.co.uk/) on designing equitable
+services, particularly focused on racial equity.
+
+There are two more sessions next week.
+
+### vaccine
+
+Just booked my first dose for next week!
+
+### head of development?
+
+dxw is doing internal hiring and I just had an interview for the role. I feel
+part way between :crossed_fingers: and are_we_the_baddies.gif. Might find out
+today, but probably on Monday (if I get the promotion, that is - it's going to
+take longer to work out if it means I'm a baddy).
