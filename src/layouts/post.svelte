@@ -154,6 +154,7 @@
     }
 
     section {
+      min-width: 0;
       flex: 1;
     }
   }
