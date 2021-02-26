@@ -158,4 +158,52 @@
       flex: 1;
     }
   }
+
+  /*
+    Prism styles
+
+    Supported languages:
+
+    - ini
+
+    See https://prismjs.com/faq.html#how-do-i-know-which-tokens-i-can-style-for
+    for token types.
+  */
+
+  section :global(code[class*="language-"]),
+  section :global(pre[class*="language-"]) {
+    tab-size: 4;
+  }
+
+  section :global(code[class*="language-"]) {
+    margin-right: 1em;
+  }
+
+  section :global(pre[class*="language-"]) {
+    margin: 1em;
+    border-left: 2px solid rgb(var(--accent-colour));
+    border-right: 2px solid rgb(var(--accent-colour));
+    padding: 1em;
+    overflow: auto;
+  }
+
+  section :global(.token.comment),
+  section :global(.token.punctuation) {
+    color: rgba(var(--text-colour), 0.7);
+    font-style: normal;
+  }
+
+  section :global(.token.constant) {
+    color: rgb(var(--accent-colour));
+  }
+
+  section :global(.token.selector) {
+    color: rgb(var(--accent-colour));
+    font-style: italic;
+  }
+
+  section :global(.token.attr-value) {
+    color: rgb(var(--secondary-accent-colour));
+    font-style: italic;
+  }
 </style>
