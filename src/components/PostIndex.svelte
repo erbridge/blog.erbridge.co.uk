@@ -24,13 +24,21 @@
     ...CONTENT_IN_PROPERTIES,
     delay: PAGE_IN_TRANSITION_DELAY + PAGE_IN_TRANSITION_DURATION / 6,
   };
+
+  let transitionFocusIndex: number | null = null;
+
+  function setFocusForTransition(index: number) {
+    transitionFocusIndex = index;
+  }
 </script>
 
 <Head {title} {description} />
 
 <header
   in:blur={HEADER_IN_PROPERTIES}
-  out:blur={HEADER_OUT_PROPERTIES}
+  out:blur={transitionFocusIndex === null
+    ? HEADER_OUT_PROPERTIES
+    : CONTENT_OUT_PROPERTIES}
   on:outrostart={scrollToTop}
 >
   <slot />
@@ -45,9 +53,16 @@
           baseStaggeredTransitionIn.delay +
           (index * PAGE_IN_TRANSITION_DURATION) / 6,
       }}
-      out:blur={CONTENT_OUT_PROPERTIES}
+      out:blur={transitionFocusIndex === index
+        ? HEADER_OUT_PROPERTIES
+        : CONTENT_OUT_PROPERTIES}
     >
-      <a sapper:prefetch sapper:noscroll href={post.slug}>
+      <a
+        sapper:prefetch
+        sapper:noscroll
+        href={post.slug}
+        on:click={() => setFocusForTransition(index)}
+      >
         <h2>
           {post.title}{#if post.subtitle}: {post.subtitle}{/if}
         </h2>
