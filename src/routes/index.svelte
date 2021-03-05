@@ -1,16 +1,28 @@
 <script lang="ts">
   import { Head } from "@erbridge/website-theme";
+  import { blur } from "svelte/transition";
+  import scrollToTop from "../utils/client/scrollToTop";
+  import {
+    CONTENT_IN_PROPERTIES,
+    CONTENT_OUT_PROPERTIES,
+    HEADER_IN_PROPERTIES,
+    HEADER_OUT_PROPERTIES,
+  } from "../utils/client/transitions";
 </script>
 
 <Head />
 
-<header>
+<header
+  in:blur={HEADER_IN_PROPERTIES}
+  out:blur={HEADER_OUT_PROPERTIES}
+  on:outrostart={scrollToTop}
+>
   <p>hi, my name is F</p>
 
   <h1>this is the home of my ramblings.</h1>
 </header>
 
-<section>
+<section in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
   <p>
     I’m an
     <span class="secondary">anarchist</span>,
@@ -32,7 +44,7 @@
   </p>
 </section>
 
-<aside>
+<aside in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
   <p>
     For more about me and my work, professional and personal, see my <a
       rel="external me"

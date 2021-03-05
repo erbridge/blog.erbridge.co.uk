@@ -1,6 +1,19 @@
-<script>
+<script context="module">
   import { Head, LongDate } from "@erbridge/website-theme";
+  import { blur } from "svelte/transition";
+  import a from "../components/markdown/a.svelte";
+  import scrollToTop from "../utils/client/scrollToTop";
+  import {
+    CONTENT_IN_PROPERTIES,
+    CONTENT_OUT_PROPERTIES,
+    HEADER_IN_PROPERTIES,
+    HEADER_OUT_PROPERTIES,
+  } from "../utils/client/transitions";
 
+  export { a };
+</script>
+
+<script>
   export let date;
   export let title;
 
@@ -32,7 +45,11 @@
 </Head>
 
 <article>
-  <header>
+  <header
+    in:blur={HEADER_IN_PROPERTIES}
+    out:blur={HEADER_OUT_PROPERTIES}
+    on:outrostart={scrollToTop}
+  >
     <div>
       <h1>{title}</h1>
 
@@ -74,22 +91,35 @@
         <aside>
           <p>This post is part of a series.</p>
           <p>
-            {#if previous}<a rel="prev" href={previous}>« previous</a>{/if}
-            {#if next}<a rel="next" href={next}>next »</a>{/if}
+            {#if previous}<a
+                sapper:prefetch
+                sapper:noscroll
+                rel="prev"
+                href={previous}>« previous</a
+              >{/if}
+            {#if next}<a sapper:prefetch sapper:noscroll rel="next" href={next}
+                >next »</a
+              >{/if}
           </p>
         </aside>
       {/if}
     </div>
   </header>
 
-  <section>
+  <section in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
     <slot />
 
     {#if previous || next}
       <aside>
-        {#if previous}<a rel="prev" href={previous}>« previous post in series</a
+        {#if previous}<a
+            sapper:prefetch
+            sapper:noscroll
+            rel="prev"
+            href={previous}>« previous post in series</a
           >{/if}
-        {#if next}<a rel="next" href={next}>next post in series »</a>{/if}
+        {#if next}<a sapper:prefetch sapper:noscroll rel="next" href={next}
+            >next post in series »</a
+          >{/if}
       </aside>
     {/if}
   </section>

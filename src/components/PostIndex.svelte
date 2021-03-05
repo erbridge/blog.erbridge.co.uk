@@ -1,5 +1,13 @@
 <script lang="ts">
   import { Head, LongDate } from "@erbridge/website-theme";
+  import { blur } from "svelte/transition";
+  import scrollToTop from "../utils/client/scrollToTop";
+  import {
+    CONTENT_IN_PROPERTIES,
+    CONTENT_OUT_PROPERTIES,
+    HEADER_IN_PROPERTIES,
+    HEADER_OUT_PROPERTIES,
+  } from "../utils/client/transitions";
 
   export let title: string;
   export let description: string;
@@ -13,14 +21,18 @@
 
 <Head {title} {description} />
 
-<header>
+<header
+  in:blur={HEADER_IN_PROPERTIES}
+  out:blur={HEADER_OUT_PROPERTIES}
+  on:outrostart={scrollToTop}
+>
   <slot />
 </header>
 
 <ul>
   {#each posts as post}
-    <li>
-      <a sapper:prefetch href={post.slug}>
+    <li in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
+      <a sapper:prefetch sapper:noscroll href={post.slug}>
         <h2>
           {post.title}{#if post.subtitle}: {post.subtitle}{/if}
         </h2>
