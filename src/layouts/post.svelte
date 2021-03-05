@@ -195,6 +195,8 @@
     Supported languages:
 
     - ini
+    - javascript (partial)
+    - markup (partial)
 
     See https://prismjs.com/faq.html#how-do-i-know-which-tokens-i-can-style-for
     for token types.
@@ -218,21 +220,24 @@
   }
 
   section :global(.token.comment),
+  section :global(.token.keyword),
   section :global(.token.punctuation) {
     color: rgba(var(--text-colour), 0.7);
-    font-style: normal;
   }
 
-  section :global(.token.constant) {
+  section :global(.token.constant),
+  section :global(.token.tag) {
     color: rgb(var(--accent-colour));
   }
 
+  section :global(.token.attr-name),
   section :global(.token.selector) {
     color: rgb(var(--accent-colour));
     font-style: italic;
   }
 
-  section :global(.token.attr-value) {
+  section :global(.token.attr-value),
+  section :global(.token.string) {
     color: rgb(var(--secondary-accent-colour));
     font-style: italic;
   }
