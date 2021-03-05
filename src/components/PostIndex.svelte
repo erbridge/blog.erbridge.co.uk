@@ -7,6 +7,8 @@
     CONTENT_OUT_PROPERTIES,
     HEADER_IN_PROPERTIES,
     HEADER_OUT_PROPERTIES,
+    PAGE_IN_TRANSITION_DELAY,
+    PAGE_IN_TRANSITION_DURATION,
   } from "../utils/client/transitions";
 
   export let title: string;
@@ -17,6 +19,11 @@
     title: string;
     subtitle?: string;
   }[];
+
+  const baseStaggeredTransitionIn = {
+    ...CONTENT_IN_PROPERTIES,
+    delay: PAGE_IN_TRANSITION_DELAY + PAGE_IN_TRANSITION_DURATION / 6,
+  };
 </script>
 
 <Head {title} {description} />
@@ -30,8 +37,16 @@
 </header>
 
 <ul>
-  {#each posts as post}
-    <li in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
+  {#each posts as post, index}
+    <li
+      in:blur={{
+        ...baseStaggeredTransitionIn,
+        delay:
+          baseStaggeredTransitionIn.delay +
+          (index * PAGE_IN_TRANSITION_DURATION) / 6,
+      }}
+      out:blur={CONTENT_OUT_PROPERTIES}
+    >
       <a sapper:prefetch sapper:noscroll href={post.slug}>
         <h2>
           {post.title}{#if post.subtitle}: {post.subtitle}{/if}
