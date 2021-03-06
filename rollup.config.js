@@ -52,6 +52,7 @@ export default {
       replace({
         "process.browser": true,
         "process.env.NODE_ENV": JSON.stringify(mode),
+        preventAssignment: true,
       }),
       svelte({
         ...svelteConfig,
@@ -106,6 +107,7 @@ export default {
       replace({
         "process.browser": false,
         "process.env.NODE_ENV": JSON.stringify(mode),
+        preventAssignment: true,
       }),
       svelte({
         ...svelteConfig,
@@ -144,6 +146,7 @@ export default {
       replace({
         "process.browser": true,
         "process.env.NODE_ENV": JSON.stringify(mode),
+        preventAssignment: true,
       }),
       commonjs(),
       typescript({ sourceMap: dev }),
