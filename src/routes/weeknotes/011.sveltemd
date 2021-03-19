@@ -1,0 +1,77 @@
+---
+title: weeknotes 11
+subtitle: the cost of software
+date: 2021-03-19
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: weeknotes/010
+# next: weeknotes/012
+---
+
+### 3d printing
+
+I bought an Elegoo Mars months ago that's been sat on a shelf waiting for me to
+find time to do anything with it. That time came with the need for a 1.5 clipper
+guard (we don't have one of those ones with a lever). Nova found
+[this STL on Thingiverse](https://www.thingiverse.com/thing:2954234) that
+apparently fits all Wahl clippers.
+
+This felt like a nice opportunity to try out
+[James'](https://twitter.com/Floppy)
+[VanDAM](https://github.com/Floppy/van_dam), a digital asset manager, which
+sucked me into making improvements to that instead of actually doing the
+print...
+
+### slack reminders
+
+I use Slack reminders a lot, but I'm not very good at actually actioning them or
+cleaning up after myself. So I snoozed 125 of them on Monday to come back on
+Tuesday as a sort of amnesty. I haven't looked at them since...
+
+### stack overflow
+
+[Stack Overflow for Teams is now free for up to 50 people](https://stackoverflow.blog/2021/03/17/stack-overflow-for-teams-is-now-free-forever-for-up-to-50-users/).
+We signed up as a trial. Let's see if / how we use it. First question and answer
+was about how people like their warm drinks, which I love, given this week was
+also a year since any of us last colocated.
+
+### makers days
+
+One of the things that came out of the retrospectives with developers at dxw was
+a need for more time to do internal tool work and work on skills that are too
+"high risk" for client time. Clients need us to do things as experts, but we
+need to keep upskilling the people in our team to stay current. Those things are
+at odds with each other.
+
+We've had "dxw time" - time to spend on internal stuff - in some form or another
+for as long as I've been at dxw, but it's always been a bit hit and miss. One of
+the main barriers was a lack of structure to that time. The latest attempt to
+resolve that is dxw makers days. Every quarter, for two days, the whole company
+will down tools on client work and focus on some aspect of dxw life and work. It
+will be an opportunity for people to do things they don't normally do as part of
+their jobs, or try new technologies, skills, etc.
+
+As an extension of that, I'm looking at implementing some extra tech makers days
+along the same lines, but only with the technology team and more focused on
+technology problems. The first one will probably be on measuring our development
+processes, to make sure we're delivering well and at the right pace.
+
+This doesn't solve the whole problem, but it helps with part of it.
+
+### the cost of software
+
+I ended the day today with a very useful discussion with some of the tech
+leadership team and our content / marketing folks (the people who own the dxw
+blog) about the cost of software, and specifically about communicating the
+hidden costs of building software as opposed to buying it.
+
+This is something we have a lot of trouble helping our clients understand, and
+that lack of understanding means we sometimes end up disappointing them. It also
+adds a lot of pressure on the teams delivering the thing to cut corners and push
+themselves to deliver the undeliverable. Hopefully this discussion leads to some
+blog posts or other guidance that we can use to help our teams and our clients
+understand the tradeoffs involved.
