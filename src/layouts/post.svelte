@@ -1,5 +1,6 @@
 <script context="module">
   import { Head, LongDate } from "@erbridge/website-theme";
+  import feather from "feather-icons";
   import { blur } from "svelte/transition";
   import a from "../components/markdown/a.svelte";
   import scrollToTop from "../utils/client/scrollToTop";
@@ -91,15 +92,20 @@
         <aside>
           <p>This post is part of a series.</p>
           <p>
-            {#if previous}<a
-                sapper:prefetch
-                sapper:noscroll
-                rel="prev"
-                href={previous}>« previous</a
-              >{/if}
-            {#if next}<a sapper:prefetch sapper:noscroll rel="next" href={next}
-                >next »</a
-              >{/if}
+            {#if previous}
+              {@html feather.icons["chevrons-left"].toSvg({
+                role: "presentation",
+              })}
+              <a sapper:prefetch sapper:noscroll rel="prev" href={previous}
+                >previous</a
+              >
+            {/if}
+            {#if next}
+              <a sapper:prefetch sapper:noscroll rel="next" href={next}>next</a>
+              {@html feather.icons["chevrons-right"].toSvg({
+                role: "presentation",
+              })}
+            {/if}
           </p>
         </aside>
       {/if}
@@ -139,6 +145,13 @@
   header aside {
     max-width: 60%;
     margin-left: auto;
+  }
+
+  header aside :global(svg) {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+    color: rgb(var(--accent-colour));
   }
 
   .coauthors-intro {
