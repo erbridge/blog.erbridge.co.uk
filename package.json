@@ -16,7 +16,7 @@
     "@babel/core": "^7.13.14",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.13.9",
-    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-env": "^7.13.12",
     "@babel/runtime": "^7.13.9",
     "@erbridge/website-theme": "github:erbridge/website-theme",
     "@nodelib/fs.walk": "^1.2.6",
