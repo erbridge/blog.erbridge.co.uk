@@ -1,6 +1,6 @@
 <script context="module">
+  import { ChevronsLeft, ChevronsRight } from "@erbridge/svelte-feather";
   import { Head, LongDate } from "@erbridge/website-theme";
-  import feather from "feather-icons";
   import { blur } from "svelte/transition";
   import a from "../components/markdown/a.svelte";
   import scrollToTop from "../utils/client/scrollToTop";
@@ -93,18 +93,14 @@
           <p>This post is part of a series.</p>
           <p>
             {#if previous}
-              {@html feather.icons["chevrons-left"].toSvg({
-                role: "presentation",
-              })}
+              <ChevronsLeft role="presentation" />
               <a sapper:prefetch sapper:noscroll rel="prev" href={previous}
                 >previous</a
               >
             {/if}
             {#if next}
               <a sapper:prefetch sapper:noscroll rel="next" href={next}>next</a>
-              {@html feather.icons["chevrons-right"].toSvg({
-                role: "presentation",
-              })}
+              <ChevronsRight role="presentation" />
             {/if}
           </p>
         </aside>
