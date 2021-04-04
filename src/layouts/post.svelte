@@ -113,15 +113,22 @@
 
     {#if previous || next}
       <aside>
-        {#if previous}<a
-            sapper:prefetch
-            sapper:noscroll
-            rel="prev"
-            href={previous}>« previous post in series</a
-          >{/if}
-        {#if next}<a sapper:prefetch sapper:noscroll rel="next" href={next}
-            >next post in series »</a
-          >{/if}
+        {#if previous}
+          <span>
+            <ChevronsLeft role="presentation" />
+            <a sapper:prefetch sapper:noscroll rel="prev" href={previous}>
+              previous post in series
+            </a>
+          </span>
+        {/if}
+        {#if next}
+          <span>
+            <a sapper:prefetch sapper:noscroll rel="next" href={next}>
+              next post in series
+            </a>
+            <ChevronsRight role="presentation" />
+          </span>
+        {/if}
       </aside>
     {/if}
   </section>
@@ -143,7 +150,7 @@
     margin-left: auto;
   }
 
-  header aside :global(svg) {
+  aside :global(svg) {
     width: 1em;
     height: 1em;
     vertical-align: bottom;
