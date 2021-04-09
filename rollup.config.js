@@ -8,6 +8,7 @@ import url from "@rollup/plugin-url";
 import autoprefixer from "autoprefixer";
 import { mdsvex } from "mdsvex";
 import path from "path";
+import rehypeSlug from "rehype-slug";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup.js";
@@ -19,6 +20,7 @@ const mdsvexOptions = {
   layout: {
     _: path.join(__dirname, "src", "layouts", "post.svelte"),
   },
+  rehypePlugins: [rehypeSlug],
 };
 
 const svelteConfig = {
