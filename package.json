@@ -38,7 +38,7 @@
     "front-matter": "^4.0.2",
     "mdsvex": "^0.8.9",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.2.7",
+    "postcss": "^8.3.8",
     "prismjs": "^1.23.0",
     "rehype-slug": "^4.0.1",
     "rollup": "^2.40.0",
