@@ -11,6 +11,7 @@
     { href: ".", segment: undefined, label: "blog" },
     { href: "weeknotes", segment: "weeknotes" },
     { href: "inclusivity", segment: "inclusivity" },
+    { href: "behaviours", segment: "behaviours" },
     { href: "archive", segment: "archive", label: "the archive" },
   ];
   const externalLink = {
