@@ -24,6 +24,7 @@
   export let subtitle = null;
   export let previous = null;
   export let next = null;
+  export let archived = false;
 </script>
 
 <Head
@@ -133,6 +134,12 @@
     {/if}
   </section>
 </article>
+
+{#if archived}
+  <aside role="banner">
+    This archived post may not be accurate or up-to-date!
+  </aside>
+{/if}
 
 <style>
   header {
@@ -256,5 +263,17 @@
   section :global(.token.string) {
     color: rgb(var(--secondary-accent-colour));
     font-style: italic;
+  }
+
+  [role="banner"] {
+    padding: 0.5em 1em;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(var(--secondary-accent-colour));
+    color: rgb(var(--background-colour));
+    font-family: var(--heading-font-family);
+    text-align: center;
   }
 </style>

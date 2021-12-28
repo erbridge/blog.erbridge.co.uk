@@ -18,6 +18,9 @@ export function getAllPosts(rootPath: string) {
         description?: string;
         title: string;
         subtitle?: string;
+        previous?: string;
+        next?: string;
+        archived?: boolean;
       }>(file);
 
       const slug = path
