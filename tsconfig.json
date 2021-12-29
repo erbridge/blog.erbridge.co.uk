@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
+  "extends": "@tsconfig/svelte",
   "compilerOptions": {
     "lib": ["DOM", "ES2017", "WebWorker"]
   },
