@@ -44,7 +44,7 @@ smaller components. Hopefully you're using your version control to tell stories,
 and
 [keeping commits to small, atomic changes](https://tekin.co.uk/2021/01/how-atomic-commits-make-you-a-better-coder)
 to help others read and understand what's changing and why (if you don't, go and
-read Tekin's linked blog post now – we'll wait). Often those smaller components
+read Tekin's linked blog post now - we'll wait). Often those smaller components
 are useful in themselves. Break them up and ship them in parts! Okay, but in
 practice?
 
@@ -105,7 +105,7 @@ later, you can!
 You might be wondering about the burden this puts on others in your team. That's
 a lot of pull requests to review, and you're all too busy writing your own
 features to be constantly interrupted by code review, right? But don't forget
-that each pull request you open is tiny – maybe a commit or 2 – and takes a
+that each pull request you open is tiny - maybe a commit or 2 - and takes a
 couple of minutes to look over. And if everyone in your team is working in this
 way, you have lots of moments when you've finished 1 part and are about to pick
 up another to go and read someone else's code.
