@@ -11,6 +11,7 @@
     { href: ".", segment: undefined, label: "blog" },
     { href: "weeknotes", segment: "weeknotes" },
     { href: "inclusivity", segment: "inclusivity" },
+    { href: "tech", segment: "tech" },
     { href: "management", segment: "management" },
     { href: "archive", segment: "archive", label: "the archive" },
   ];

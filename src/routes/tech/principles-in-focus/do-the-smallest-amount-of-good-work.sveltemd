@@ -1,0 +1,158 @@
+---
+title: principles in focus
+subtitle: do the smallest amount of good work
+date: 2022-01-06
+description:
+  Once you’re breaking your work down, you can start to think about adjusting
+  your perception of “done”.
+crosspost:
+  from:
+    text: the dxw blog
+    href: https://www.dxw.com/2022/01/our-principles-in-focus-do-the-smallest-amount-of-good-work/
+---
+
+In the development profession at dxw,
+[one of the principles we hold ourselves to](https://playbook.dxw.com/#development-team-principles)
+is to "do the smallest amount of good work". But what does that mean in
+practice?
+
+One of the foundational principles of agile delivery is to work on the riskiest
+things first to try to reduce risk as quickly as possible. This is part of what
+sets it apart from other models like waterfall; when you're working in an agile
+way, you're planning and delivering at the same time. You deliver in chunks so
+you can learn from what you've done and keep adjusting the plan to keep the
+focus on delivering the highest value thing first. "Do the smallest amount of
+good work" reflects this idea.
+
+## What does "smallest" mean?
+
+When writing software, we usually come from the angle of delivering a feature.
+Our work comes to us as a user story, or a problem statement, and we're there to
+build a thing to solve it. Software developers are generally pretty good at
+decoupling features from each other to deliver the highest value changes
+independently of other things.
+
+But how do we deliver those features? Many of us would pick up the task, work
+out what the acceptance criteria are, design an approach to meet those criteria,
+and disappear into our computer for a few days, emerging with a finished
+product, tested and shiny, ready to review. We review the work, deploy it, learn
+from how it fits into the application, and how it's used to inform our next bit
+of feature work.
+
+We can do better than that though. Most features we build are made of many
+smaller components. Hopefully you're using your version control to tell stories,
+and
+[keeping commits to small, atomic changes](https://tekin.co.uk/2021/01/how-atomic-commits-make-you-a-better-coder)
+to help others read and understand what's changing and why (if you don't, go and
+read Tekin's linked blog post now – we'll wait). Often those smaller components
+are useful in themselves. Break them up and ship them in parts! Okay, but in
+practice?
+
+Consider an example. You're adding some new behaviour to something that already
+exists, and you're looking at the code and thinking, "if I changed the way this
+function works a little, it would make it a lot easier to build on top of." Many
+of us would go ahead and do that refactor, build our new behaviour on top,
+bundle it up, and ship it off for review.
+
+But there's lost time between you doing the refactor and you finishing building
+the new behaviour. During that time other people in your team might be
+interacting with the same part of the system and they're still working with the
+old, less good behaviour (and risking making conflicting changes). They don't
+get the benefit of your refactor until you're finished with the feature as a
+whole.
+
+Instead of bundling your refactor in with the new behaviour, you could ship that
+refactor for others to use while you build the next thing. Sure, you might
+change it again while you're building as you spot further improvements, but the
+foundations are there for others to think about and use. Your work is batched up
+smaller, making it easier to review and understand.
+
+And importantly, you can identify something higher value than the thing you were
+initially setting out to build to work on next. You can put what you were doing
+down without leaving a load of code floating around, growing out of date, and
+future work can benefit from what you've done without the rest of the
+deprioritised thing.
+
+This is an easy example, but the principle applies to most of the work we do.
+Most features more than a few lines long are built in stages that are **useful
+on their own**. By bundling them together, you're depriving your team of the
+continuous value you're creating. And if you're off sick tomorrow, they have to
+wait until you're well again to finish it or pick up whatever mess you left them
+(if you remembered to push your work in progress changes).
+
+## Impact!
+
+The agility created by working in this way is gold dust for teams. You can be
+reactive on the scale of hours and days, not weeks and months. You can go where
+you're needed, and be constantly chasing that highest value work to reduce the
+most risk. You can adapt to the changing needs of other people in your team,
+jump on that thing that's blocking someone else, and you've left things in a
+clean place for you or someone else to pick up where you left off.
+
+It also helps train you to be less precious about chasing perfection. When
+building in this way, you have to internalise that your code is never
+"finished". You can always make software better, but is doing that the most
+important thing right now?
+
+If you're shipping features incrementally, you're teaching yourself that every
+step is useful and that you'll come back and improve the bits that need it when
+you need to. And when you're done with one part, you get to step back, take
+stock, and evaluate where the biggest win is now. You're probably going to learn
+to stop and call a thing "good enough" a long time before you would have before,
+making you more efficient at delivering value. If you need to make it better
+later, you can!
+
+You might be wondering about the burden this puts on others in your team. That's
+a lot of pull requests to review, and you're all too busy writing your own
+features to be constantly interrupted by code review, right? But don't forget
+that each pull request you open is tiny – maybe a commit or 2 – and takes a
+couple of minutes to look over. And if everyone in your team is working in this
+way, you have lots of moments when you've finished 1 part and are about to pick
+up another to go and read someone else's code.
+
+Working in this way, it's not unusual to ship 5 or 10 pull requests per team
+member in a day, keeping only the smallest things in "work in progress" state,
+reacting to the changing needs of the project, and getting those juicy dopamine
+hits from completing things.
+
+Magic.
+
+## How can I get better at this?
+
+Have I convinced you? The first step is to think about how you're breaking work
+down right now. If you're picking up a feature ticket and getting stuck in, try
+stopping first to plan. Work out the first step you need to take for the feature
+and break that out into its own ticket. Deliver that first step all the way
+through code review to being merged before picking up the feature ticket again
+to find the next bit.
+
+If you break your features up into smaller and smaller chunks until you have
+individual changes, you can then group them back together to balance the
+overhead of putting pull requests together and getting things merged with
+delivering value quickly. You'll probably need to do this consciously at first,
+but over time you'll pick up a sense for when to stop breaking something down.
+Eventually you might not even think about the breakdown at all and instead
+naturally find the "ship it" points in what you're doing as you work.
+
+Once you're breaking your work down, you can start to think about adjusting your
+perception of "done". Each time you deliver some working software, stop and
+think about whether the next thing you could build on top of it is actually the
+most valuable thing to do now. Have you met your acceptance criteria? Is there
+something else to pay attention to now?
+
+Once you've got into the habit (and have convinced your team it's something they
+should do too), you'll start to be able to adapt your priorities between those
+steps. Eventually you'll be able to adjust your plan entirely in service of the
+project goals. You're learning from delivering the parts and can make radical
+shifts to priorities without worrying about the consequences of leaving things
+half-finished. You've delivered everything valuable, nothing's growing stale in
+an unmerged branch, and can return to build on top of what's there when it's the
+right time. Or not if it's never the most important thing to do. You might even
+learn to let those "unfinished" things go! Or so I've been told. I can hope!
+
+## Thoughts?
+
+This is all one person's opinion (mine) and there are many other things covered
+by that principle to "do the smallest amount of good work" but hopefully it's
+food for thought that might help you think about how you approach your work. If
+you'd like to talk about this idea, email me or find me on Twitter.
