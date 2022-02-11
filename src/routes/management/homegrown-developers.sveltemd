@@ -1,0 +1,200 @@
+---
+title: homegrown developers
+subtitle: better than shop bought
+date: 2022-01-27
+description:
+  Here’s how we developed the framework for progression in the technology team
+  at dxw.
+crosspost:
+  from:
+    text: the dxw blog
+    href: https://www.dxw.com/2022/01/homegrown-developers-better-than-shop-bought/
+---
+
+In the last 2 years, we've changed the way we support the growth of our
+developers at dxw. Before we started, we had job descriptions that only really
+got reviewed and updated when we were hiring, promotion decisions made by our
+single manager in the team, and salary negotiations where your willingness and
+ability to bargain might result in a high salary.
+
+None of these things were failures of ours. We had grown fairly rapidly, and our
+processes still needed to catch up. We wanted to make things better. Now we have
+a [detailed progression framework](https://dxw.progressionapp.com/technology)
+describing the expectations of each role,
+[a promotion process](https://playbook.dxw.com/guides/tech-team-promotion-process)
+involving a panel reviewing a promotion pack, and fixed salary points for each
+role in the team.
+
+We were able to do all this because of others sharing their thoughts, processes,
+and designs
+([Sally Lait's work on the frameworks for Monzo and Farewill](https://sallylait.com/blog/2020/11/21/introducing-a-progression-framework/)
+was especially influential, as well as the excellent references provided on
+[progression.fyi](https://www.progression.fyi/) and
+[the work done in our design team on their framework](https://www.dxw.com/2020/05/a-career-progression-framework-for-designers-at-dxw/)),
+so it's only right that we also share ours. So here's how we developed the
+framework for progression in the dxw technology team.
+
+## Motivation
+
+When we started, we wanted to think about why we wanted a different process.
+What wasn't working about what we had? What did we want to change?
+
+The main catalyst for change was
+[hiring junior developers](https://www.dxw.com/2020/04/introducing-our-junior-developers-and-our-plan-for-their-development/).
+We were taking on 2 junior members of the team - a first for dxw - and it was
+vital that we had what we needed to support them in place. It's clearly not fair
+to expect them to create or ask for what they need as you might for someone more
+senior, and ignoring the amount of support they need to learn would be setting
+them up to fail.
+
+As a discipline and team, we were growing. With the addition of juniors, we had
+exceeded the capacity of having a single manager for everyone. One person was
+trying to look after a dozen others and wasn't able to give any of them enough
+time because of it. It wasn't sustainable, and certainly wasn't going to work as
+we grew. We needed a way to support our team in a consistent way where they all
+had the attention they needed.
+
+Progression paths weren't clear. At the time we had 2 roles in the development
+team: Developer and Senior Developer, and were just adding a third: Junior
+Developer. And we had no defined path between them. With the addition of
+juniors, we needed to understand what we needed to help them learn - what they
+needed to know to be independent builders of software - and it surfaced our
+overall lack of structure and clarity.
+
+## First draft
+
+We started with the skills we expected our mid-level developers to have. We
+looked at the specific technology we used, where we deployed our code to, the
+sorts of meetings we had on projects, and so on. Our first draft was very
+granular with 13 technical skills and 6 communication skills.
+
+We then extrapolated backwards to what we expected juniors to be able to do when
+they started and drew a path between them. This gave us 2 milestones between
+brand new junior and mid-level developers and a detailed set of things to learn.
+
+This worked well to create structure for the juniors to learn and grow. It was
+clear what they needed to learn, and allowed us to structure support for them.
+It also helped us to start spreading line management out with confidence that
+people would get decent and consistent support.
+
+The challenge came when we tried to extrapolate forwards. We added more levels
+to extend the skills we had to more senior roles, but when we came to trialing
+it with some of our people, we found it just didn't work. The skills were too
+narrow and missed a large amount of the "fuzzier" skills we needed from our more
+senior developers, like the ability to break work down for others, or the
+ability to explain how to think about a problem to our clients.
+
+While our junior staff primarily need to learn technical skills, as you get more
+senior it becomes a lot less about technology and a lot more about people.
+That's especially true for an agency like ours. We don't generally need deep
+specialists at more senior level. We care a lot more about being able to work
+with teams, other disciplines, support others to do good work, and being able to
+switch contexts as needed.
+
+## Version 2
+
+Setting the first framework aside, we took a different approach. Instead of
+looking at the technology and activities, we shifted focus to the principles we
+wanted people to follow.
+
+As an agency working with the public sector, a large amount of our work comes
+through the [G-Cloud framework](https://www.digitalmarketplace.service.gov.uk/).
+Part of that framework involves
+[publishing a rate card](https://www.gov.uk/guidance/g-cloud-suppliers-guide#documents-you-need-to-include)
+based on the
+[Skills for the Information Age (SFIA) framework](https://www.sfia-online.org/en).
+
+SFIA has 7 levels of responsibility:
+
+1. Follow
+1. Assist
+1. Apply
+1. Enable
+1. Ensure, advise
+1. Initial, influence
+1. Set strategy, inspire, mobilise
+
+and defines them across 5 competencies:
+
+- Autonomy
+- Influence
+- Complexity
+- Business skills
+- Knowledge
+
+Using SFIA gave us an external, well supported, and tested framework to base
+ours on, and made it easier for us to work out our rate cards and have them
+linked to roles.
+
+We took the levels in SFIA and mapped them to our roles. To do that, we split
+our 3 roles into 6:
+
+- Junior Developer became Apprentice Developer (SFIA 1) and Junior Developer
+  (SFIA 2)
+- Developer became Developer (SFIA 3) and Senior Developer (SFIA 4)
+- Senior Developer became Lead Developer (SFIA 5) and Principal Developer
+  (SFIA 6)
+
+From there, we looked at each competency and wrote a couple of paragraphs
+describing how it applied to us for each role. We looked at the matrix of skills
+and roles and grouped and adapted the skills, moving paragraphs around, creating
+new skills, blurring their boundaries at points. We were using SFIA as a
+starting point, but didn't want to be too constrained by it.
+
+What resulted was a framework with 4 categories, each with 2 skills, for a total
+of 8 skills - much leaner than what we had before:
+
+- Autonomy: being autonomous and handling uncertainty
+- Knowledge: working with programming languages and stacks, and working with
+  standards
+- Influence: influencing teams and individuals and influencing organisations
+- Support: learning and teaching and supporting sales and recruitment
+
+We later added a fifth category: Leadership with "leading disciplines" and
+"managing others" as we started thinking about the management and leadership
+roles in the team.
+
+## Testing
+
+We were much happier with the new version of the framework. It described what we
+needed from people in broad terms instead of a laundry list of specific skills,
+and it grew and adapted cleanly to all levels in the team. But we knew it
+wouldn't be perfect. We needed to test it.
+
+We selected a handful of developers from the team to start using it. We tried to
+get a good cross-section of the team to explore how it worked at all levels. We
+ran check-ins against the framework for those people, and as a group of managers
+(there were 3 of us by this point), we came together to talk about what we'd
+learned. We wrote out a backlog of changes we knew we needed to make, as well as
+things we thought were worth thinking about, and went about changing them.
+
+While we were updating the framework, we continued onboarding more people onto
+it. We were confident that it was the right approach, even if there were some
+kinks to work out, and adding more people meant that we could learn as we went,
+incrementally updating and adjusting.
+
+Eventually, everyone in the team was using the framework in draft, but we wanted
+to make it more "official". We did another pass to make sure we'd incorporated
+any feedback we needed to before opening it up to the team to review the
+framework and slot themselves in it where they think they fit, doing a check-in
+against it.
+
+## Ongoing
+
+As a team, we know that our needs are going to shift as we change and as the
+market we operate in changes. While it's important to give people some
+consistency, we don't want it to be difficult to change the framework as we need
+to. As such, along with the framework itself, we also have an open backlog and
+changelog visible to the team to help them see what's coming and what's changed
+and when. We try not to make large changes in one big go, but if we do, we make
+sure to let everyone know what's changed and why.
+
+This has been working well for us so far. We're not finished - one of the things
+we need to work out is how to support people to build a habit of collecting
+their good work as they go, for example. But it's meant that we can map our
+rates to our salaries, develop a fairer promotion process with open criteria for
+everyone to work towards, and create a more transparent and equitable team.
+
+[Our framework is publicly available](https://dxw.progressionapp.com/technology).
+If you find the framework or this explanation helpful, please get in touch! We'd
+love to hear how you've learned from us, and maybe we can learn from you too.
