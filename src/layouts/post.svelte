@@ -188,7 +188,7 @@
     }
 
     header {
-      max-width: 14rem;
+      max-width: 14.5rem;
       margin-right: 2rem;
       word-wrap: break-word;
     }
