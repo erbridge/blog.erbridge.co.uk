@@ -3,7 +3,7 @@ import type { Request } from "polka";
 import { getAllPosts } from "../../utils/server/getAllPosts";
 
 export function get(_req: Request, res: ServerResponse) {
-  const posts = getAllPosts("behaviours");
+  const posts = getAllPosts("management");
 
   res.writeHead(200, {
     "Content-Type": "application/json",

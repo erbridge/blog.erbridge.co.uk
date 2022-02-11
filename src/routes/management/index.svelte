@@ -3,7 +3,7 @@
   import PostIndex from "../../components/PostIndex.svelte";
 
   export const preload: Preload = async function (this, _page, _session) {
-    const res = await this.fetch("behaviours.json");
+    const res = await this.fetch("management.json");
     const posts = await res.json();
 
     return { posts };
@@ -20,14 +20,15 @@
 </script>
 
 <PostIndex
-  title="behaviours"
-  description="I put a lot of thought into the things I do and the ways in which I behave. This is a collection of those that I’ve tried to put into words."
+  title="management"
+  description="Reconciling being a manager with being an anarchist has been a tricky balance for me, but here are some of the things I’ve done and learned in the process."
   {posts}
 >
-  <h1>behaviours</h1>
+  <h1>management</h1>
 
   <p>
-    I put a lot of thought into the things I do and the ways in which I behave.
-    This is a collection of those that I've tried to put into words.
+    Reconciling being a manager with being an anarchist has been a tricky
+    balance for me, but here are some of the things I’ve done and learned in the
+    process.
   </p>
 </PostIndex>
