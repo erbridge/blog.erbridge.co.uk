@@ -29,6 +29,7 @@
     <span class="secondary">agender</span>,
     <span class="secondary">trans</span>,
     <span class="secondary">queer</span>,
+    <span class="secondary">ace</span>,
     <span class="secondary">autistic</span>,
     <span class="secondary">mentally ill</span>,
     <span class="secondary">disabled</span>,
