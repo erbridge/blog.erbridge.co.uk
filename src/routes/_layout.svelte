@@ -15,18 +15,8 @@
     { href: "management", segment: "management" },
     { href: "archive", segment: "archive", label: "the archive" },
   ];
-  const externalLink = {
-    href: "https://erbridge.co.uk",
-    label: "main site",
-    rel: ["me"],
-  };
 </script>
 
-<BaseLayout
-  {segment}
-  contactEmail="blog@erbridge.co.uk"
-  {internalLinks}
-  {externalLink}
->
+<BaseLayout {segment} contactEmail="blog@erbridge.co.uk" {internalLinks}>
   <slot slot="main" />
 </BaseLayout>
