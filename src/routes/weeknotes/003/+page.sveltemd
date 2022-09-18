@@ -1,0 +1,189 @@
+---
+title: weeknotes 3
+subtitle: time tyranny
+date: 2021-01-22
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: /weeknotes/002
+next: /weeknotes/004
+---
+
+### github notifications
+
+Instead of playing video games, I spent most of Sunday dealing with GitHub
+notifications. I have far too many things to be paying attention to. I archived
+some, but others are still alive on the web, so I should really be looking after
+their dependencies... Why can't software maintain itself yet?
+
+### overworked
+
+I'm feeling kind of overworked. I'm on 3 client projects, all of which seem to
+be constantly demanding my attention, and I'm trying to balance that with line
+management of 6 people and working on a technologist progression framework. It's
+a lot, and I'm not sure I'm doing the best possible job for anyone, right now.
+I'm off work next week, and hopefully some of the client work will calm down by
+the time I'm back (although it sounds like there's new client work appearing on
+the horizon).
+
+### openssl
+
+My
+[pull request that has sat open since 2016](https://github.com/openssl/openssl/pull/583),
+rebasing a
+[pull request opened in 2014](https://github.com/openssl/openssl/pull/118), was
+finally closed this week. It's a shame - it made some noticeable improvements to
+prime number generation speed - but I don't have the time or energy to keep
+rebasing it and having it miss releases. I haven't dared actually look at the
+code I wrote 6.5 years ago. I'm sure I would have many problems with it now.
+
+### green party
+
+I [volunteered my time](/weeknotes/001) to the Green Party and immediately got
+overwhelmed by Basecamp notifications. So I haven't actually looked at any of
+them yet. I have a week off next week, so maybe I'll think about it then.
+
+### time tyranny
+
+I decided with 2021 that I would discard location-based timezones. I've been
+living in UTC+2 for the past few weeks (Cairo, but without the weather). My
+work-day is the same, and I use Technology to make sure I can still interact
+with people in plain old UTC.
+
+The first thing I noticed was a shift in my waking up time to be earlier, so I'm
+now generally awake more than 15 minutes before I need to roll out of bed for
+work. I think the sleepless night at the beginning of the year combined with
+Nova getting up at 08:00 (or 06:00 for the Luddites) for work, might also have
+had something to do with it.
+
+The second thing I noticed was that I have become more innately aware that I'm
+nearing the end of my working day. Something to do with seeing 19:45 on my
+clock, maybe?
+
+Overall, a success, I think. I wonder what impact summer time will have. With
+the new regime, I am no longer subservient to the Tyranny of Time, so won't be
+doing daylight savings/summer time.
+
+### debiasing recruitment
+
+Following my January theme on
+[inclusive hiring](/inclusivity/inclusive-job-descriptions), I attended training
+on
+[debiasing recruitment with Applied](https://www.beapplied.com/training-how-to-debias-your-recruitment).
+I wasn't sure how useful it would be, since I'm already aware of a lot of
+cognitive bias that exists in recruitment (and life) thanks to a second-hand
+psychology degree and a lot of reading about inclusive hiring, but it really
+was. It was full of evidence and real practical advice, most of which don't need
+you to actually buy their service to put in place. Strong recommend if you're at
+all involved in designing hiring processes. The next one in a UK time zone is on
+11 February, but they're running them all the time (aiming to run 2000 people
+through it this year).
+
+### gra reform
+
+My evidence has finally been "received" on the latest episode of
+[Making Transphobes Feel Listened to at the Expense of Trans People](https://committees.parliament.uk/work/658/reform-of-the-gender-recognition-act/).
+That doesn't mean it's been "accepted". I think they got a lot of evidence.
+
+If you're not sure what this is about, or why it's frustrating, I suggest you
+watch the
+[oral evidence](https://committees.parliament.uk/event/2998/formal-meeting-oral-evidence-session/)
+(particularly the first part - I'm not really interested in the transphobic
+"debate", but if you're new to this, it might be helpful context for what we're
+fighting against).
+
+### estimation
+
+I've been thinking about estimation as a tool for gaining and _testing_ shared
+understanding. We don't usually estimate tasks (assign a number from the
+Fibonacci sequence based on complexity or effort) as part of planning at dxw. We
+also seem to spend more time talking about what a task _is_ in the middle of
+sprints than I've experienced in other places. I don't think this is a
+coincidence.
+
+In my experience, estimation done well involves someone who knows about a task
+talking through what it involves (ideally writing it down as they go). The rest
+of the development team asks questions to clarify that work (updating the task
+description). Once everyone feels like they understand the work involved, they
+vote on the complexity or effort simultaneously. If votes are all the same, or
+at most one step apart, you go with the highest estimate (the riskiest estimate)
+and move on to the next task. If two people voted two or more steps apart,
+there's clearly a mismatch in their understanding of what the task involves. Ask
+more questions, talk some more, and vote again. Repeat until everyone
+agrees(ish).
+
+This process creates an estimate that is mostly disposable (you should probably
+pay attention if it tells you that a task is too big, though). The real value is
+in encouraging and supporting everyone on the team to really understand the work
+before setting out to do it. This saves time later when your tech lead meant
+something different from what the implementer understood and they're only
+finding out about it at code review time. Or when a task is up next in priority,
+but the person picking it up doesn't understand what they need to do and needs
+to wait for someone who does to be available to explain it (or just skips over
+it entirely).
+
+Be agile; fail fast; derisk assumptions; etc.
+
+[Dom](https://twitter.com/evilstreak) pointed me at
+[this method for contextualizing what the numbers mean](https://www.annashipman.co.uk/jfdi/how-to-estimate)
+by Mazz Mosley via Anna Shipman, which seems like it might be good method for
+achieving this goal of shared understanding, but I worry about how it would work
+in a team with a wide range of skill levels. But if it gets teams talking, it's
+probably fine.
+
+### ukgovcamp
+
+#### day 1
+
+I attended an interesting session on the intersection of user experience and
+security. The main takeaway was the value of including security experts in the
+_design_ phase, not just tacking them on to the end via a penetration test.
+
+There was also a really interesting session on coding in the open. Something I
+hadn't really considered was how in government, _everything_ about your service
+is under the microscope (or could be), and this includes code comments and
+commit messages. An inside joke for a team might be read by a member of the
+public and reflect badly on the service or otherwise result in Bad Things.
+:thinking_face:
+
+Also, question protocols! They sound really useful: an analysis of the data you
+need and how you'll get it and what you'll do if you don't have it or get a
+wrong answer. I know at least one project in recent memory that would have
+benefited from this approach.
+
+#### day 2
+
+We had a really helpful conversation about governance and assurance and
+delivery. It seems like governance getting in the way, or being disorganized, is
+a pretty universal for delivery teams across government. It was mostly a vent,
+but we got some useful things out of it, particularly around
+[roadmapping](https://eleanor-mollett.medium.com/radarban-roadmap-70dfb425aa2f)
+[differently](https://cutlefish.substack.com/p/tbm-2152-continuous-roadmapping).
+
+This was the session I proposed, but it turns out that unconferences give me
+major public speaking anxiety, but [Alex](https://twitter.com/lexij) kindly (and
+expertly) took over facilitation, so all was well.
+
+Work pulled me away from the rest of the day.
+
+#### day 3
+
+...is tomorrow.
+
+### microsoft teams
+
+...is such a mindfuck. It's such a different mental model from Slack, Discord,
+and everything else. I've been forced to use it for the first time for more than
+just video calls, and it's like all the worst things about email with the
+expectation of instant responses, mixed in with instant messaging. It's bad? Or
+maybe I just need to get used to it?
+
+### tv
+
+The Expanse is still really good, and we've got more Vikings to watch now. We've
+also been watching Kim's Convenience, which is just really wholesome, though I
+worry whether some of the humour is meant to laugh _at_ Korean culture rather
+than _with_ it.

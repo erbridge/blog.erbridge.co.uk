@@ -1,0 +1,228 @@
+---
+title: weeknotes 1
+subtitle: how to weeknote
+date: 2021-01-09
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+next: /weeknotes/002
+---
+
+### this website
+
+Nothing like wanting to pick up a new habit to push you to get stuck into
+something you've been meaning to do for a while, as a way of potentially
+procrastinating against that new habit, right?
+
+I'm sick of maintaining my
+[existing website](https://github.com/erbridge/erbridge-home). It's been ~3
+years since I did that rewrite in React from its Jekyll predecessor, and it was
+fun to do but ended up massively complicated for what it is. The plan was for it
+to be the testbed for building an engine I could use to quickly spin up personal
+websites for other people, and an excuse to cement some of my React knowledge.
+That engine never really happened, though. I'm also not freelancing anymore, so
+my needs for the site have changed anyway.
+
+I've been meaning to do another rewrite for a year or so, so here's the kick to
+make that happen. The goal of this new site is to be more accessible, more
+progressively enhanced, more static, and hopefully simpler while still
+aesthetically pleasing. Svelte has been catching my interest recently (I'm a big
+fan of the component-based model popularized by React), and I wanted an excuse
+to try it.
+
+I'm starting with just these weeknotes, but I'll expand the scope as we go,
+probably starting with a more general blog. The source is (as always)
+[on GitHub](https://github.com/erbridge/blog.erbridge.co.uk), if that interests
+you.
+
+### medical nonsense
+
+Last week I ran out of sertraline due to GP holiday closures and non-functional
+repeat prescriptions. I am still waiting for them to be delivered. It's been two
+weeks of hot flashes, constant anxiety, electrified bones and teeth, and
+insomnia (for which you can blame the length of this first post)...
+
+On the other hand, the prescription fuck up forced me to actually use a phone
+for voice stuff, which means I finally got the blood test results from the
+beginning of November. That unlocked an increase in my estradiol dosage, so I'm
+now on 200 µg / 24 hours via patches! :tada:
+
+On the other, other hand, that took me 9 months to organize, from having the
+endocrine consultation in April: a consultation that was supposed to be followed
+by an immediate blood test, so that doesn't bode well for the test I'm supposed
+to get done in 2-3 months.
+
+I have also utterly failed to book the follow up I was supposed to book for 6-9
+months after that consultation, due to more phone call requirements. I have
+extreme phone anxiety, which, when combined with executive dysfunction,
+basically means I won't do things that require a phone (which is why HMRC, my
+mortgage, and my credit cards all have my deadname still, years after I changed
+it everywhere with sensible modern systems - or even email). The waiting list
+for appointments is 7-8 months (this is private - the waiting times are so much
+longer on the NHS), so assuming I manage to force myself to do the phone thing
+next week, I'm still going to be very late for a followup. Plus it's going to
+cost me £150 I don't really want to spend.
+
+I wish services would drop phones as a single point of access.
+
+### hmrc
+
+Writing notes for this reminded me that HMRC deadnames me still, so I had
+another go at trying to fix that without having to call someone. Things have
+improved since the last time, in that instead of "call us" it's now "wait on a
+page for a button to appear for your slot to do a live webchat - or call us".
+Unsurprizingly, I have yet to actually see that button. Is there something wrong
+with queues?
+
+### backups
+
+I remembered that I've been meaning to work out an automated backup system for
+on- and off-site backups, but I no longer remember what I wanted to back up,
+given almost everything lives in the cloud somewhere. Hrmm... I have a RasPi
+sitting around doing nothing which is probably a useful component if I do decide
+to do something about it.
+
+### tv
+
+After making our way through the first two seasons of Fringe, we took a break (I
+find it helps with continued enjoyment of something) for the new releases of
+Jeopardy on Netflix.
+
+I'm not sure I enjoy Jeopardy very much. It's a weird American nationalist
+thing, and far too many questions are about a country that I already know too
+much about. Pretty sure we'll still watch all of the collections that appear on
+Netflix, though.
+
+We watched the end of Discovery, and while I enjoy it, I wish they'd be a little
+more episodic and a little less cliffhanger, especially when using the
+antiquated drip-feed release model. But I'd forgive it nearly anything thanks to
+the wholesome queer representation this season.
+
+We're now catching up on this season of The Expanse, which I love, but it's
+taken me 5 episodes to remember what's even going on.
+
+### seo
+
+I presented some advice on SEO to a client this week. Turns out SEO is a little
+less mysterious than it was the last time I spent any decent amount of time
+reading about it. A big take away from the research, and the headline, was
+"making things better for your users is probably good for SEO". Nice to see Big
+Tech doing _something_ good for the world, I guess.
+
+There was an interesting question about how to optimize for coming second
+(rather than first), which I'd never really thought about before. Neither had
+the rest of the internet, apparently, but the advice basically ended up being
+"tell whoever you want to be first to do a better job of SEO".
+
+Everyone who's read the deck so far has found it interesting or useful, so at
+some point in the next month or so, I intend on turning that research into a
+post for the [dxw blog](https://www.dxw.com/blog/). Which reminds me that I
+should probably cross-post the things I write there to somewhere I control, for
+posterity. I wrote
+[some advice about being inclusive of trans people focusing on pronouns](https://www.dxw.com/2019/03/pronouns-what-are-they-good-for/)
+shortly after I started that I still think is solid advice worth keeping
+somewhere.
+
+### ukgovcamp
+
+I've pitched a session to this year's (online) edition of
+[UKGovcamp](https://www.ukgovcamp.com/) about navigating governance while
+delivering services in an agile way.
+
+> How do we deliver work in an agile way while maintaining the assurances
+> needed? Frequently, the service standard is at odds with organizational
+> governance. Are there tools that public sector orgs could share with each
+> other to make that more consistent across government and reduce the friction
+> to delivery?
+
+I hope I come out of it with some tactics or tools that will help with what can
+be a really frustrating experience.
+
+I also expressed my frustration about needing to make phone calls (see above)
+and someone else has offered to facilitate a session on making that better.
+
+### self-defined
+
+> A modern dictionary about us. We define our words, but they don't define us.
+
+My contribution of a definition of
+[agender](https://www.selfdefined.app/definitions/agender/) was merged into
+[Self-Defined](https://www.selfdefined.app/). I'm a little sad that that project
+is still fairly sparse in terms of definitions, as I'd like to be able to send
+more people to it as general reading.
+
+### junior developer role naming
+
+I [asked Twitter](https://twitter.com/erbridge/status/1346763917914230788) for
+some advice on how to think about naming a junior developer role. I was trying
+to work out a useful way to disambiguate someone who can make a computer do
+things sometimes from someone who can deliver working software as part of a
+team.
+
+It turns out that asking strangers on Twitter for advice is a recipe for people
+assuming you're a shitbag who wants to rip off people at the beginning of their
+career unless you're really careful about how you word it. Who knew? I think
+forgetting to mention degree education caused some people to think I was trying
+to say that degrees are somehow more valuable than self-teaching or bootcamps,
+where, if anything, I value them less. In practice, I'd just forgotten that
+anyone still did vocational degrees.
+
+It did reveal some useful advice, though. I think I'm probably wrong to try to
+give those things different names, even if we need to be able to tell the
+difference internally.
+
+### recruiter archaeologist
+
+I got an email to my work email from a cold-calling recruiter, deadnaming me.
+The most annoying thing about this is that that email address has never been
+associated with my deadname, so that recruiter must have gone digging to find
+it. I told them to piss off and emailed the company they were recruiting for,
+whose CEO emailed me back to apologize.
+
+### being openly trans
+
+Someone from a client reached out to me to say hi as a fellow trans person,
+remarking on seeing my pronouns, which was nice and cancelled out some of the
+recruiter bullshit. Part of the reason I'm very publicly trans is to pave the
+way for better trans inclusion in the world, so seeing the direct impact of that
+is pretty validating.
+
+### inclusive job descriptions
+
+The blog post I wrote on
+[writing more inclusive job descriptions](https://www.dxw.com/2021/01/how-to-write-inclusive-job-descriptions/)
+dropped, and got a handful of positive reactions. I'm glad it's been helpful,
+and that my thoughts resonated.
+
+### green party
+
+I had a chat with a campaign manager for the Green Party about volunteering my
+time and expertise. So that's a thing that's happening.
+
+### dylan
+
+Dylan continues to be an utter delight. He's very weird about fizzy drinks,
+especially ones with red labels, because they hiss at him, but he's not running
+away every time one's picked up any more. On the other hand, he now walks back
+and forth at the end of the bed instead of getting up on it (where he's welcome
+and encouraged to be).
+
+:shrug:
+
+Dogs are weird.
+
+I wrote this earlier in the week, but taking him out today was a fucking
+nightmare. The park was full of people, Dylan was demanding balls from anyone
+with anything that looked remotely like one, and not paying attention to whether
+or not he was attached to me or not before bolting after them at full speed. And
+it was freezing cold. Ugh. At least he tired himself out.
+
+### how to weeknote
+
+This has essentially been a stream of consciousness, sorry, but I'd like to give
+future issues more structure. Or at least some organization.
+
+:thinking_face:

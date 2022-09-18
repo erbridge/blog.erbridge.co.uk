@@ -1,0 +1,143 @@
+---
+title: weeknotes 9
+subtitle: yargs
+date: 2021-03-05
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: /weeknotes/008
+next: /weeknotes/010
+---
+
+<script>
+  import { Figure } from "@erbridge/website-theme";
+  import alfred from "$lib/images/weeknotes/009/alfred.jpg";
+  import grave from "$lib/images/weeknotes/009/grave.jpg";
+</script>
+
+### argument parsing
+
+I've been looking at argument parsing for
+[budget-sync](https://github.com/erbridge/budget-sync) with
+[yargs](https://github.com/yargs/yargs) and I've been finding it really
+challenging to parse (ha!) the documentation. It dives too deep, too fast
+without explaining the basics, and it's not as recursive as I hoped it would be.
+The library's named for pirates, but it could equally be named for the
+frustration involved to create anything non-trivial...
+
+It also turns out that Monzo's tokens only last a few hours before they need
+refreshing, which I thought would make it difficult to keep running as a GitHub
+Actions workflow. But it wasn't a massive pain in the end, thanks to a creative
+solution. I now have a second workflow set up to refresh the access token and
+rewrite the GitHub secrets as a "database".
+
+I don't hate it as a solution. It does make the initial set up a lot more
+involved now for other people (and not very documented any more), though, but
+I'm also pretty sure nobody else is using it, so it probably doesn't matter!
+
+### entertainment
+
+We finished Fringe season 5. Nova's been watching all of Netflix's crime
+documentaries while I've been working, so we've mostly been letting them spill
+over into the evenings, but this week we finally got to the final season of
+Vikings (which was a very nice end to the saga). That gave me an itch to pick up
+Crusader Kings III again, so I've been playing a bunch of that this week while
+we move on to the latest season of American Gods.
+
+### roleplaying
+
+Friday evening was the third session I failed to do anything but the most
+cursory prep for. I can improvise a session worth of stuff fine, especially with
+the party out in the wilderness, but it does make it hard to give them a sense
+of progress, which they're wanting (we do
+[Stars and Wishes](https://www.gauntlet-rpg.com/blog/stars-and-wishes) at the
+end of every session). So I'm determined to spend some time actually preparing
+the next bit, as well as throwing out some of my sketched out events to let them
+see story progress sooner instead of setting up yet more plot hooks. We can come
+back to them. I've got a new skeleton but I need to flesh out Something
+Interesting for next session. Maybe that will happen this weekend?
+
+Last session, we also tried out a new (old) thing, which was a
+[Miro](https://miro.com/) board as a sketch map to help ground the visuals of
+combat. The players self managed it, and it seemed to help with the "where am I
+again?" questions, which is good. Plus we ended up with a sketch map of the
+events of the session, which includes the usual in-jokes and friendly banter the
+group enjoys.
+
+<Figure
+	src={grave}
+	alt="A screenshot of a clipart gravestone on a white background with the feet of a crossed out berserker in view.">
+	Lilith fell unconscious twice in a single fight, and nearly died outright of massive damage... She lives to die another day, though.
+</Figure>
+
+This is the longest I've ever stuck with a campaign as a GM, and I think the
+group that I play with has a lot to do with that.
+
+Having said that, I've played a lot of fantasy games recently and I have an itch
+to do some sci-fi roleplaying. I bought
+[Technoir](https://www.drivethrurpg.com/product/93378/Technoir) a while ago
+(thanks to [Friends at the Table](https://friendsatthetable.net/)) to run a
+murder mystery, cyberpunky thing. I even commissioned a piece of art for it! So
+maybe I'll run that when we're done. Or let someone else in the group have a
+turn running something.
+
+### union rep training
+
+This week I had part 2 of my union representative training with
+[Prospect](https://prospect.org.uk/), focusing on how to handle personal cases
+(like accompanying people to disciplinary or grievance meetings). I now know
+more about employment law than I ever thought I'd need to.
+
+I feel ready, if a bit daunted by it all (especially the impact of getting it
+wrong), but I think that's probably healthy.
+
+### alfred theme
+
+I had some fun making [Alfred](https://www.alfredapp.com/) look like this site.
+The theme lives
+[here](https://github.com/erbridge/dotfiles/tree/main/alfred/Alfred.alfredpreferences/themes)
+if you're interested.
+
+<Figure
+	src={alfred}
+	alt="A preview of an Alfred panel in dark grey and bright green with pink accents.">
+	I'm really enjoying these colours!
+</Figure>
+
+### svelte vs react
+
+[Svelte for Sites, React for Apps](https://www.swyx.io/svelte-sites-react-apps/)
+
+[This site is built with Svelte](/weeknotes/001), and I've been really happy
+with it as an HTML superset. It's pretty effortless to work with, so you can
+focus on the bits that actually want some attention and not worry about
+complicated APIs, lifecycle hooks, or the rest. Most of the time, a page is some
+HTML, a `<style>` tag, and a couple of `import` statements.
+
+### animations
+
+I added animations to page transitions on this site, and it was almost
+effortless thanks to [built-in](https://svelte.dev/docs#transition_fn)
+[behaviour](https://svelte.dev/docs#in_fn_out_fn)
+[in Svelte](https://svelte.dev/docs#animate_fn). Every other time I've wanted to
+do something like this, I've spent hours evaluating different libraries, and
+writing custom code that doesn't exactly do what I want, and then fighting it
+for a while. In Svelte, I added 2 lines of code for the base effect (and then
+tweaked and refactored):
+
+```html
+<script>
+	import { fade } from "svelte/transition";
+</script>
+
+<div transition:fade>I fade in when I'm created and out when I'm destroyed</div>
+```
+
+The actual commit for the basic transitions is
+[here](https://github.com/erbridge/blog.erbridge.co.uk/commit/b3f879deced359d27a5080e5e488b38cf609e171)
+if you're interested.
+
+I really like Svelte (can you tell?).

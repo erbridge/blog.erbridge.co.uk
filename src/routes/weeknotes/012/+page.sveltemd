@@ -1,0 +1,91 @@
+---
+title: weeknotes 12
+subtitle: mimemagic
+date: 2021-03-26
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: /weeknotes/011
+next: /weeknotes/013
+---
+
+<script>
+  import { Figure } from "@erbridge/website-theme";
+  import threedprint from "$lib/images/weeknotes/012/3dprint.jpg";
+</script>
+
+### baby's first 3d print
+
+I finally actually used the 3d printer!
+
+<Figure
+  src={threedprint}
+  alt="A transparent hair clipper guard.">
+  It doesn't have the best fit, but it does the job.
+</Figure>
+
+As a resin printer, the Elegoo Mars has a high potential for mess, but I'm a lot
+less scared of it now, so might print some more things.
+
+### probot settings
+
+A while ago the [Probot Settings app](https://probot.github.io/apps/settings/)
+was brought to my attention as a way of standardizing GitHub configuration for
+an organization. I spent an evening falling down that rabbit hole for my
+personal account and found that, actually the
+[advertized inheritance from a `.github` repository doesn't work](https://github.com/probot/settings/issues/95).
+So I [forked](https://github.com/erbridge/settings) and
+[fixed it](https://github.com/erbridge/settings/commit/668f2f04c2486ea798a0a264ff10b2802dcf8f18)
+(giant commit with a not great commit message, sorry). The Probot framework made
+it pretty easy to
+[deploy to Heroku](https://github.com/probot/probot/blob/master/docs/deployment.md),
+too, so now it's running for my user account.
+
+I might work out how to make my changes a bit more optional and try to
+contribute them upstream, but given that the current maintainers have been
+giving holding responses on the issue for at least 2 years, I'm not sure it's
+worth the effort.
+
+### licensing
+
+[The `mimemagic` licence fiasco](https://www.theregister.com/2021/03/25/ruby_rails_code/)
+dominated my week. It's hard to know what I would do in a situation like that.
+In practice I would probably be very reactive and go nuclear like the maintainer
+did. I think whatever you do, someone's going to shout at you. It's just
+annoying that the response was to relicense, instead of thinking about how to
+fix it and keep it MIT, and to release that without a klaxon to let people know
+the licence had changed.
+
+A subtlety that a lot of people seemed to miss was that due to the
+implementation details of the package, it _had always been in violation of the
+GPL_. Lots of people complaining about the version yanking and licence change
+seemed to be unaware of that.
+
+The incident caused us to investigate a couple of licence checking tools:
+[FOSSA](https://fossa.com/) and
+[GitHub's `licensed`](https://github.com/github/licensed/). Of the two, FOSSA
+does a better job of discovering licences than `licensed`, but it's also
+ludicrously expensive. `licensed` only knows about a small number of licences. A
+small project I tested it on had ~900 dependencies in its graph and ~100 of them
+were marked as having `none` or `other` licences (FOSSA had trouble with ~10).
+Imagine having to review that many licences for hundreds of repositories, and
+keep it up to date over time... It makes me wonder how many other violations are
+just lying around in everyone's dependency graphs.
+
+### tv
+
+We finished the Man in the High Castle. I found the ending quite satisfying,
+considering it was clearly cut short by a season. I have mixed feelings about
+the show, though. Some of the most sympathetic characters are actual fascists,
+and I don't want to sympathize with them...
+
+### roleplaying
+
+I just finished a really good session. I'd had a big chase scene prepared (I did
+my prep in advance?!) but no plan survives contact with the ~~enemy~~ players,
+so instead I had to improvize a load of social interactions, which I'm not
+usually great at. But it was fun! And my days of worldbuilding procrastination
+helped (it's _not_ a big waste of time like everyone tries to tell you).
