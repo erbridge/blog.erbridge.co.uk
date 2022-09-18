@@ -8,7 +8,7 @@
     segment: string | undefined;
     label?: string;
   }[] = [
-    { href: ".", segment: undefined, label: "blog" },
+    { href: ".", segment: undefined, label: "home" },
     { href: "weeknotes", segment: "weeknotes" },
     { href: "inclusivity", segment: "inclusivity" },
     { href: "tech", segment: "tech" },
