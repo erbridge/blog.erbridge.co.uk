@@ -3,10 +3,7 @@ import type { Request } from "polka";
 import { getAllPosts } from "../../utils/server/getAllPosts";
 
 export function get(_req: Request, res: ServerResponse) {
-  const posts = getAllPosts("archive").map((post) => ({
-    archived: true,
-    ...post,
-  }));
+  const posts = getAllPosts("archive");
 
   res.writeHead(200, {
     "Content-Type": "application/json",
