@@ -34,8 +34,7 @@
     <span class="secondary">mentally ill</span>,
     <span class="secondary">disabled</span>,
     <span class="secondary">vegan</span>,
-    <span class="secondary">tattooed</span>,
-    <span class="secondary">magnetic</span>
+    <span class="secondary">tattooed</span>
     <span>technologist</span>.
   </p>
 
