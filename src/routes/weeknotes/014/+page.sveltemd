@@ -1,0 +1,73 @@
+---
+title: weeknotes 14
+subtitle: arranging furniture
+date: 2021-04-09
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: /weeknotes/013
+next: /weeknotes/015
+---
+
+### feather
+
+I added icons to this site using [Feather](https://feathericons.com/), but it
+turns out that
+[it's kind of massive](https://www.npmjs.com/package/feather-icons). I found
+[a port of Feather for Svelte](https://github.com/dylanblokhuis/svelte-feather-icons)
+that supports tree-shaking, but it doesn't support setting accessibility
+properties like `role` or `aria-*` properties, and doesn't look very maintained
+(it wouldn't even build for me). So I did what any self-respecting software
+developer would do; I made
+[my own version](https://github.com/erbridge/svelte-feather).
+
+### sveltekit
+
+[The SvelteKit migration](/weeknotes/013#sveltekit) went... not great. Looking
+forward to a codemod to make the process less tedious and also to being able to
+import Svelte components from packages without compilation as I can with Sapper.
+Currently, I need to build the components and still get issues all the way down
+the stack (can't import `.css`, can't import modules, invalid syntax
+`<script>...`). Probably I just need to include Babel in the pipeline somewhere
+or something, but I can't be bothered to work out how to do that with Vite right
+now.
+
+### wanderhome
+
+[Wanderhome](https://possumcreekgames.itch.io/wanderhome) was released this
+week, and it is the most wholesome, heartwarming, emotionally open, non-violent,
+quietly queer roleplaying game I have ever read.
+
+> Wanderhome is a pastoral fantasy role-playing game about traveling
+> animal-folk, the world they inhabit, and the way the seasons change. It is a
+> game filled with grassy fields, mossy shrines, herds of chubby bumblebees,
+> opossums in sundresses, salamanders with suspenders, starry night skies, and
+> the most beautiful sunsets you can imagine.
+>
+> You might be a tamarin who dances with small and forgotten gods, a leporine
+> mail carrier who relies on moths to get packages where they belong, a little
+> lizard with a big heart and a mysterious past, or a near-endless number of
+> other thrilling possibilities. No matter what, we’re always
+> travelers—animal-folk who go from village to village and get to see the length
+> and breadth of all the world of Hæth. The seasons will change as we play, and
+> we will change with them.
+
+I have yearned for this game without knowing it. I summoned some woodland
+creatures and we're going to play a game in a couple of weeks!
+
+### floc
+
+Google is working around cookie blockers with their latest thing, FLoC, enabled
+by default in Chrome. Apparently, you can block it by adding a
+`Permissions-Policy: interest-cohort=()` HTTP response header, so I've done that
+on this site.
+
+### arranging furniture
+
+After a year of working from home, and ~6 months of having a desk stick out into
+the middle of the living room, we finally flipped the room around, so the desk
+can face a wall instead, and it's so much better, even if I have a less
+interesting video call background now.

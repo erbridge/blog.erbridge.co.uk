@@ -1,0 +1,82 @@
+---
+title: weeknotes 8
+subtitle: it’s audit time
+date: 2021-02-26
+description:
+  Weeknotes are an opportunity to reflect on the past week and look forward to
+  the next one. Mine reflect on both my personal and my professional life, so
+  expect a mixture of software stuff, video games, public sector work, existing
+  as a trans person, tabletop roleplaying, and whatever else claims my
+  attention.
+previous: /weeknotes/007
+next: /weeknotes/009
+---
+
+**content warning** food
+
+### git branching
+
+I often find myself not sure which branch is the base branch on projects. We use
+a variety of branch names at dxw (we're part way through renaming `master` to
+`main` and some projects use `develop` as their active branch, too). I made a
+quick Git alias so I don't have to think about it.
+
+```ini
+# ~/.gitconfig
+[alias]
+	default = !git checkout $(git rev-parse --verify --quiet develop && echo "develop" || git rev-parse --verify --quiet main && echo "main" || echo "master")
+```
+
+[bob](https://twitter.com/rjw1) then pointed out a better solution:
+
+```ini
+# ~/.gitconfig
+[alias]
+	default = !git checkout $(git default-branch)
+	default-branch = !git remote show origin | awk '/HEAD branch/ {print $NF}'
+```
+
+Nice!
+
+### iso27001
+
+It's audit time. I mostly watched Dom talk about our development practices so I
+can forget it all in time for next year's audit. :tada:
+
+It did raise some questions about how we share knowledge within the team. We
+have a playbook, but does anybody really use it, except for during onboarding?
+Is that ok? If people aren't using it, where can we signpost things for people
+where they _do_ look?
+
+### allplants
+
+[The first batch arrived!](/weeknotes/007) And there was a lot of it. Too much
+to actually fit in the freezer thanks to misshapen blocks of frozen vegetables
+being very space inefficient and some forgotten about lotus buns. But it's tasty
+and, importantly, easy! We've has the gnocchi and the chilli and both were nice,
+and far nicer than any ready meal I've ever had before. And decent portion
+sizes, too.
+
+### examining power
+
+[You're not just a manager, you're also a boss](https://leaddev.com/professional-development/youre-not-just-manager-youre-also-boss)
+(read it).
+
+### ews1
+
+So, remortgaging is probably not going to happen any time soon. Despite my
+building being short, it has the bad kind of cladding, and the freeholder has no
+interest in removing it and the leaseholders can't do anything about it without
+the freeholder's permission. Lenders won't lend without an EWS1, which you can't
+get with the bad cladding. Why is property ownership such a nightmare?!
+
+### user manual for me
+
+I did my semi-regular review of
+[my user manual for me](https://miro.com/app/board/o9J_kpbgVi4=/) and made a few
+tweaks as I learn a bit more about myself.
+
+### week off
+
+This week was A Lot. Glad I've got the week off next week. I'm very grateful for
+my 4 weeks on, 1 week off, working pattern. It's the best pattern I've ever had.

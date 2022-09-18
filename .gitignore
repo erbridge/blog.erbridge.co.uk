@@ -1,6 +1,8 @@
-# Dependencies
-/node_modules/
-/src/node_modules/@sapper/
-
-# Build artefacts
-/__sapper__/
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
