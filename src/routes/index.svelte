@@ -46,13 +46,6 @@
 
 <aside in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
   <p>
-    For more about me and my work, professional and personal, see my <a
-      rel="external me"
-      href="https://erbridge.co.uk">main site</a
-    >.
-  </p>
-
-  <p>
     If you’d like to chat about anything I’ve written,
     <a rel="external me" href="https://twitter.com/erbridge">tweet or DM me</a>
     or
