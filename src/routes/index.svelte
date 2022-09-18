@@ -39,8 +39,8 @@
   </p>
 
   <p>
-    I used to make <span>games</span>. Now I work to improve
-    <span>public services</span>.
+    I used to make <span>games</span>. Now I work to make a
+    <span>better world</span>.
   </p>
 </section>
 
