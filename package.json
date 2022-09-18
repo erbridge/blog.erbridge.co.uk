@@ -36,7 +36,7 @@
     "autoprefixer": "^10.2.5",
     "feed": "^4.2.2",
     "front-matter": "^4.0.2",
-    "mdsvex": "^0.9.8",
+    "mdsvex": "^0.10.6",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.5",
     "prismjs": "^1.25.0",
