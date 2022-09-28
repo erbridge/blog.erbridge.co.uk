@@ -45,8 +45,9 @@ and
 [keeping commits to small, atomic changes](https://tekin.co.uk/2021/01/how-atomic-commits-make-you-a-better-coder)
 to help others read and understand what's changing and why (if you don't, go and
 read Tekin's linked blog post now - we'll wait). Often those smaller components
-are useful in themselves. Break them up and ship them in parts! Okay, but in
-practice?
+are useful in themselves. Break them up and ship them in parts!
+
+## Okay, but in practice?
 
 Consider an example. You're adding some new behaviour to something that already
 exists, and you're looking at the code and thinking, "if I changed the way this
