@@ -1,0 +1,165 @@
+---
+title: SEO is a dark art
+date: 2021-01-14
+---
+
+What are the search engine optimization (SEO) risks of a site migration? There's
+lots of advice on the internet about improving your SEO (a lot of it focused on
+[keywords](https://backlinko.com/hub/seo/lsi)), but not as much on how to make
+sure your page rankings are at least as good as they were, after a migration to
+a different service or tech stack. Let's improve that.
+
+Imagine you run a website with thousands of articles. You've decided your
+current content management system (CMS) isn't fit for purpose, so you want to
+switch to a new one. While you're at it, you plan to improve the accessibility
+of your site and make some URLs a bit more sensible. What should you be looking
+out for?
+
+## A caveat
+
+SEO is a dark art.
+
+Most of the advice available is conjecture based on analysis of search results
+and general advice from Google which may or may not impact your page rankings.
+But lots of SEO advice is also good user experience advice, so you there's value
+in following it whether or not the Google gods decide to acknowledge your
+invocations.
+
+## Your migration approach
+
+In a case like this, where you have lots of pages to migrate, it makes sense to
+do it in small chunks. That way, if something goes wrong, you don't tank your
+page rankings for the entire site and disappear off the internet. If your site
+is smaller (less than one hundred pages), you might find the extra work to do
+that doesn't balance out the risk of a decreasing page ranking.
+
+Set up redirects from old URLs to new URLs so nothing breaks internally while
+you're migrating. This is also a good idea to avoid breaking external links to
+your content, too.
+
+Expect search engines to take a few weeks to a few months to update, depending
+on the scale of your changes. During that transition period, you'll probably
+notice your page ranking fluctuate as search engines reindex the site.
+
+Measure your page rankings before, during, and after the migration. This can be
+hard to measure directly, so look for secondary metrics, like referral rates
+from search engines. And make sure you understand what differences you expect in
+those secondary metrics due to the change in technology, set up, or methodology
+before you panic when you see a drastic change.
+
+## Performance
+
+Performance is a big factor in SEO. A site with consistently bad performance
+won't perform well on search engines.
+
+There are a
+[number of metrics](https://web.dev/user-centric-performance-metrics/#important-metrics-to-measure)
+to be aware of (and to measure), but if you could only focus on two, they would
+be:
+
+- First Contentful Paint (FCP) - the time it takes before something appears in
+  the visitor's browser
+- Time to Interactive (TTI) - the time until the visitor can reliably interact
+  with the page (so the page has finished rendering and has loaded all of the
+  scripts it needs)
+
+[Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) can
+help you measure those metrics and more, or you can use
+[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+for something lighter weight.
+
+If you're going to measure one thing to track how well your site will perform in
+search engines, make it your Lighthouse score. Aim for 100.
+
+## URLs
+
+I'm glad (hypothetical) you are considering making your URLs cleaner and
+clearer. This is definitely good for the user (URLs carry meaning), but it's
+also probably good SEO.
+
+Semantically accurate URLs are clearer for users and indicate some of the
+structure of your site to robots.
+
+`/contact/contact-us/uk/contact-us` is quite a mess. How about `/contact-us/uk`
+or `/uk/contact-us` instead? Much neater, and the former tells us to expect
+there to be other locations with different contact pages, while the latter tells
+us that the UK site might have a different structure from other locations.
+
+`/post?id=123456789` tells me nothing about the post. How about
+`/posts/seo-is-a-dark-art` instead? I don't care about the ID of the post. I
+want to know what it's about.
+
+`/t/p/1234` tells me nothing at all. How about `/topics/posts/my-life-in-binary`
+instead? Now I know what I'm going to find, just from the URL, and so do search
+engines.
+
+Keywords in your URLs probably matter (a little), and they probably matter less
+the lower the "importance" of their location in the URL. URLs have a hierarchy
+of importance, which essentially decreases as you move to the right:
+`https://(2).1.com/3/4/5/6/7`. Words earlier in your URL will influence your
+page ranking more than ones later on. Similarly, shorter URLs are probably
+better but don't compromize on those semantics we talked about earlier.
+
+Be consistent in your URL casing. Your system might be case-insensitive, but the
+search engine crawler might not. Make sure all your internal links to a page use
+the same casing (I recommend all lowercase) and try to encourage others to link
+to you with the same casing rules. You don't want that link juice (do you feel
+gross? I feel gross) being split between two URLs.
+
+Avoid URL parameters that change the content of the page. Using URL parameters
+to select content risks that the crawlers don't understand how that is split and
+miss pages, or double count them. It's fine to use parameters to change the
+layout or behaviour of a page, though. ~~`/post?id=123456789`~~, no.
+`/posts?sort_by=date`, yes.
+
+Use a
+[sitemap](https://developers.google.com/search/docs/advanced/sitemaps/overview)
+to help with page discovery. A crawler can only visit pages it can find links
+to, so you can help it by linking to a sitemap that links to everything.
+
+And be careful when using subdomains. Pages on a subdomain might be treated as
+being part of a different site by search engines.
+
+### Redirects
+
+Redirects forward page rankings. If site X links to your page on URL `/old/p`,
+but you've moved the canonical URL to `/new/p`, setting up a redirect from
+`/old/p` to `/new/p` will cause search engines to transfer the link sauce (no,
+that's not better) to the new URL.
+
+XXX: canonical urls
+
+XXX: soft 404s
+
+XXX: redirect statuses
+
+XXX: redirect chains
+
+XXX: avoid linking to 404s
+
+## The markup
+
+Making your site more accessible is good for your page ranking (and making it
+worse is bad). One of the reasons things like semantic HTML and ARIA attributes
+are useful for screen readers is because they're easier for a computer to
+understand. If a crawler can understand the purpose of your content, it will be
+able to understand where the meaningful content is and how it relates to other
+content.
+
+Use `id` attributes or named anchor tags on your heading and other dividing
+content. Not only does this make it possible to create deep links in your pages
+(`/some/page#heading`), but it also helps crawlers understand the structure of
+those pages, helping it analyze the semantics more reliably.
+
+## Metadata
+
+[<meta> tags and friends](https://developers.google.com/search/docs/advanced/crawling/special-tags)
+are important for controlling what appears in search engines and snippets but
+also for keyword analysis. The contents of your meta tags might be used by
+search engines as a summary of what your page is about (as they are intended),
+so make them accurate!
+
+Similarly, including [Schema.org](https://schema.org/) metadata on your pages
+helps search engines understand the context and intent of the page. It's a lot
+of effort to create good metadata, though, so you might find there are quicker
+wins.
