@@ -9,5 +9,5 @@ export const load: PageServerLoad<{
 		subtitle?: string;
 	}[];
 }> = () => ({
-	posts: getAllPosts("inclusivity"),
+	posts: getAllPosts("archive"),
 });
