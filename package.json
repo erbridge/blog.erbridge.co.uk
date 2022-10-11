@@ -16,7 +16,7 @@
 		"@nodelib/fs.walk": "^1.2.8",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/eslint-plugin": "^5.40.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"autoprefixer": "^10.4.11",
 		"eslint": "^8.16.0",
