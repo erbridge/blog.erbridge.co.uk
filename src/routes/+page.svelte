@@ -48,10 +48,9 @@
 	<p>
 		If you’d like to chat about anything I’ve written, <a
 			rel="external me"
-			href="https://twitter.com/erbridge">tweet or DM me</a
-		>
-		or <a href="mailto:blog@erbridge.co.uk">email me</a>. I’d love to hear from
-		you!
+			href="https://twitter.com/erbridge">tweet</a
+		>, <a rel="external me" href="https://tech.lgbt/@erbridge">toot</a>, or
+		<a href="mailto:blog@erbridge.co.uk">email</a> me. I’d love to hear from you!
 	</p>
 </aside>
 
