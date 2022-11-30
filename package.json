@@ -14,7 +14,7 @@
 		"@erbridge/svelte-feather": "^0.1.0",
 		"@erbridge/website-theme": "git+https://npm@github.com/erbridge/website-theme.git",
 		"@nodelib/fs.walk": "^1.2.8",
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.42.1",
 		"@typescript-eslint/parser": "^5.42.1",
