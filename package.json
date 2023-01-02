@@ -26,7 +26,7 @@
 		"front-matter": "^4.0.2",
 		"mdsvex": "^0.10.6",
 		"normalize.css": "^8.0.1",
-		"prettier": "^2.6.2",
+		"prettier": "^2.8.1",
 		"prettier-plugin-svelte": "^2.9.0",
 		"prismjs": "^1.29.0",
 		"rehype-slug": "^5.1.0",
