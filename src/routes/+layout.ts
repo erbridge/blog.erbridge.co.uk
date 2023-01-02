@@ -16,6 +16,7 @@ export const load: LayoutLoad<{
 		{ href: "/inclusivity", pathPrefix: "/inclusivity", label: "inclusivity" },
 		{ href: "/tech", pathPrefix: "/tech", label: "tech" },
 		{ href: "/management", pathPrefix: "/management", label: "management" },
+		{ href: "/food", pathPrefix: "/food", label: "food" },
 		{ href: "/archive", pathPrefix: "/archive", label: "the archive" },
 	],
 });
