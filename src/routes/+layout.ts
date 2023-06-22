@@ -17,6 +17,7 @@ export const load: LayoutLoad<{
 		{ href: "/tech", pathPrefix: "/tech", label: "tech" },
 		{ href: "/management", pathPrefix: "/management", label: "management" },
 		{ href: "/food", pathPrefix: "/food", label: "food" },
+		{ href: "/fiction", pathPrefix: "/fiction", label: "fiction" },
 		{ href: "/archive", pathPrefix: "/archive", label: "the archive" },
 	],
 });
