@@ -33,7 +33,7 @@
 		<span class="secondary">autistic</span> /
 		<span class="secondary">schizoid</span>,
 		<span class="secondary">mentally ill</span>,
-		<span class="secondary">disabled</span>,
+		<span class="secondary">disabled</span>, mostly
 		<span class="secondary">vegan</span>,
 		<span class="secondary">tattooed</span>
 		<span>technologist</span>.
