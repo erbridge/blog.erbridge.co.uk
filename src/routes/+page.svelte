@@ -30,7 +30,8 @@
 		<span class="secondary">trans</span>,
 		<span class="secondary">queer</span>,
 		<span class="secondary">ace</span>,
-		<span class="secondary">autistic</span>,
+		<span class="secondary">autistic</span> /
+		<span class="secondary">schizoid</span>,
 		<span class="secondary">mentally ill</span>,
 		<span class="secondary">disabled</span>,
 		<span class="secondary">vegan</span>,
