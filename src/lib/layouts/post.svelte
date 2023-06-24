@@ -58,7 +58,7 @@
 	<header
 		in:blur={HEADER_IN_PROPERTIES}
 		out:blur={HEADER_OUT_PROPERTIES}
-		on:outrostart={scrollToTop}
+		on:outroend={scrollToTop}
 	>
 		<div>
 			<h1>{title}</h1>

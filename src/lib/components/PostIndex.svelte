@@ -39,7 +39,7 @@
 	out:blur={transitionFocusIndex === null
 		? HEADER_OUT_PROPERTIES
 		: CONTENT_OUT_PROPERTIES}
-	on:outrostart={scrollToTop}
+	on:outroend={transitionFocusIndex === null ? scrollToTop : undefined}
 >
 	<slot />
 </header>
@@ -56,6 +56,7 @@
 			out:blur={transitionFocusIndex === index
 				? HEADER_OUT_PROPERTIES
 				: CONTENT_OUT_PROPERTIES}
+			on:outroend={transitionFocusIndex === index ? scrollToTop : undefined}
 		>
 			<a
 				data-sveltekit-noscroll

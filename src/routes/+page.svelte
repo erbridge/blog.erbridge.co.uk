@@ -15,7 +15,7 @@
 <header
 	in:blur={HEADER_IN_PROPERTIES}
 	out:blur={HEADER_OUT_PROPERTIES}
-	on:outrostart={scrollToTop}
+	on:outroend={scrollToTop}
 >
 	<p>hi, my name is F</p>
 
