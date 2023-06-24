@@ -40,8 +40,8 @@
 	</p>
 
 	<p>
-		I used to make <span>games</span>. Now I'm making a
-		<span>better world</span>.
+		I used to make <span>games</span>. Now I try to make a
+		<span>better world</span> (or at least stop it getting worse).
 	</p>
 </section>
 
@@ -87,6 +87,7 @@
 
 	section p:last-child {
 		margin-left: 3em;
+		margin-right: 3em;
 	}
 
 	aside {
