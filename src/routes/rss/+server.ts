@@ -1,6 +1,8 @@
 import { createFeed } from "$lib/server/createFeed";
 import type { RequestHandler } from "./$types";
 
+export const prerender = true;
+
 export const GET: RequestHandler = async () => {
 	const feed = createFeed("rss2", "rss");
 
