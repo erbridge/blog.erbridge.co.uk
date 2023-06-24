@@ -2,6 +2,33 @@
 	"trailingSlash": false,
 	"headers": [
 		{
+			"source": "/atom",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "application/atom+xml"
+				}
+			]
+		},
+		{
+			"source": "/feed",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "application/feed+json"
+				}
+			]
+		},
+		{
+			"source": "/rss",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "application/rss+xml"
+				}
+			]
+		},
+		{
 			"source": "/(.*)",
 			"headers": [
 				{
