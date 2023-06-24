@@ -105,20 +105,10 @@
 					<p>
 						{#if previous}
 							<ChevronsLeft role="presentation" />
-							<a
-								data-sveltekit-prefetch
-								data-sveltekit-noscroll
-								rel="prev"
-								href={previous}>previous</a
-							>
+							<a data-sveltekit-noscroll rel="prev" href={previous}>previous</a>
 						{/if}
 						{#if next}
-							<a
-								data-sveltekit-prefetch
-								data-sveltekit-noscroll
-								rel="next"
-								href={next}>next</a
-							>
+							<a data-sveltekit-noscroll rel="next" href={next}>next</a>
 							<ChevronsRight role="presentation" />
 						{/if}
 					</p>
@@ -135,24 +125,14 @@
 				{#if previous}
 					<span>
 						<ChevronsLeft role="presentation" />
-						<a
-							data-sveltekit-prefetch
-							data-sveltekit-noscroll
-							rel="prev"
-							href={previous}
-						>
+						<a data-sveltekit-noscroll rel="prev" href={previous}>
 							previous post in series
 						</a>
 					</span>
 				{/if}
 				{#if next}
 					<span>
-						<a
-							data-sveltekit-prefetch
-							data-sveltekit-noscroll
-							rel="next"
-							href={next}
-						>
+						<a data-sveltekit-noscroll rel="next" href={next}>
 							next post in series
 						</a>
 						<ChevronsRight role="presentation" />

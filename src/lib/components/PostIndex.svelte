@@ -58,7 +58,6 @@
 				: CONTENT_OUT_PROPERTIES}
 		>
 			<a
-				data-sveltekit-prefetch
 				data-sveltekit-noscroll
 				href={post.slug}
 				on:click={() => setFocusForTransition(index)}
