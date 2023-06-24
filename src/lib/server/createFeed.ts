@@ -8,6 +8,7 @@ export function createFeed(type: "atom" | "json" | "rss", slug: string) {
 	const feed = new Feed({
 		id: BASE_URL,
 		title: "erbridge",
+		updated: new Date(),
 		language: "en-GB",
 		feedLinks: {
 			[type]: `${BASE_URL}${slug}`,
