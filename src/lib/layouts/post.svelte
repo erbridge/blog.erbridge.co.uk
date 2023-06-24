@@ -7,8 +7,8 @@
 		HEADER_IN_PROPERTIES,
 		HEADER_OUT_PROPERTIES,
 	} from "$lib/utils/transitions";
-	import { ChevronsLeft, ChevronsRight } from "@erbridge/svelte-feather";
 	import { Head, LongDate } from "@erbridge/website-theme";
+	import { ChevronsLeft, ChevronsRight } from "lucide-svelte";
 	import { blur } from "svelte/transition";
 
 	export { a };

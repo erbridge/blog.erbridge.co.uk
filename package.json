@@ -11,7 +11,6 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@erbridge/svelte-feather": "^0.1.0",
 		"@erbridge/website-theme": "github:erbridge/website-theme",
 		"@nodelib/fs.walk": "^1.2.8",
 		"@sveltejs/adapter-static": "^2.0.2",
@@ -24,6 +23,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"feed": "^4.2.2",
 		"front-matter": "^4.0.2",
+		"lucide-svelte": "^0.252.0",
 		"mdsvex": "^0.10.6",
 		"normalize.css": "^8.0.1",
 		"prettier": "^2.8.1",
