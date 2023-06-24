@@ -4,7 +4,7 @@ import { getAllPosts } from "./getAllPosts";
 
 const BASE_URL = "https://blog.erbridge.co.uk/";
 
-export function createFeed(type: "atom" | "json" | "rss2", slug: string) {
+export function createFeed(type: "atom" | "json" | "rss", slug: string) {
 	const feed = new Feed({
 		id: BASE_URL,
 		title: "erbridge",
