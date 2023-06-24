@@ -274,6 +274,7 @@
 	}
 
 	[role="banner"] {
+		margin-top: 1rem;
 		padding: 0.5em 1em;
 		width: 100%;
 		position: sticky;
