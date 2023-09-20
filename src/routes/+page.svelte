@@ -53,6 +53,12 @@
 		or
 		<a href="mailto:blog@erbridge.co.uk">email</a> me. I’d love to hear from you!
 	</p>
+
+	<p>
+		I also have a <a rel="me" href="//library.erbridge.co.uk/"
+			>library of creations</a
+		>.
+	</p>
 </aside>
 
 <style>
@@ -121,6 +127,10 @@
 
 		section {
 			font-size: 1.2em;
+		}
+
+		aside p:last-child {
+			margin-left: 35em;
 		}
 	}
 </style>
