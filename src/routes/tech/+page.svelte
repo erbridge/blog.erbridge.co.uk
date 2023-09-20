@@ -1,14 +1,14 @@
 <script lang="ts">
-	import PostIndex from "$lib/components/PostIndex.svelte";
+	import { CategoryIndexPage } from "@erbridge/website-theme";
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
 </script>
 
-<PostIndex
+<CategoryIndexPage
 	title="tech"
 	description="Some opinions on technology. Because the internet definitely needs more of those!"
-	posts={data.posts}
+	pages={data.posts}
 >
 	<h1>tech</h1>
 
@@ -16,4 +16,4 @@
 		Some opinions on technology. Because the internet definitely needs more of
 		those!
 	</p>
-</PostIndex>
+</CategoryIndexPage>
