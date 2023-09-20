@@ -1,20 +1,13 @@
 <script lang="ts">
-	import scrollToTop from "$lib/utils/scrollToTop";
-	import {
-		CONTENT_IN_PROPERTIES,
-		CONTENT_OUT_PROPERTIES,
-		HEADER_IN_PROPERTIES,
-		HEADER_OUT_PROPERTIES,
-	} from "$lib/utils/transitions";
-	import { Head } from "@erbridge/website-theme";
+	import { Head, scrollToTop, transitions } from "@erbridge/website-theme";
 	import { blur } from "svelte/transition";
 </script>
 
 <Head />
 
 <header
-	in:blur={HEADER_IN_PROPERTIES}
-	out:blur={HEADER_OUT_PROPERTIES}
+	in:blur={transitions.HEADER_IN_PROPERTIES}
+	out:blur={transitions.HEADER_OUT_PROPERTIES}
 	on:outroend={scrollToTop}
 >
 	<p>hi, my name is F</p>
@@ -22,7 +15,10 @@
 	<h1>this is the home of my ramblings.</h1>
 </header>
 
-<section in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
+<section
+	in:blur={transitions.CONTENT_IN_PROPERTIES}
+	out:blur={transitions.CONTENT_OUT_PROPERTIES}
+>
 	<p>
 		I’m an
 		<span class="secondary">anarchist</span>,
@@ -45,7 +41,10 @@
 	</p>
 </section>
 
-<aside in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
+<aside
+	in:blur={transitions.CONTENT_IN_PROPERTIES}
+	out:blur={transitions.CONTENT_OUT_PROPERTIES}
+>
 	<p>
 		If you’d like to chat about anything I’ve written, <a
 			rel="external me"

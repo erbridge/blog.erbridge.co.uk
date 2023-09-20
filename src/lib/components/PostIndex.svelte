@@ -1,14 +1,10 @@
 <script lang="ts">
-	import scrollToTop from "$lib/utils/scrollToTop";
 	import {
-		CONTENT_IN_PROPERTIES,
-		CONTENT_OUT_PROPERTIES,
-		HEADER_IN_PROPERTIES,
-		HEADER_OUT_PROPERTIES,
-		PAGE_IN_TRANSITION_DELAY,
-		PAGE_IN_TRANSITION_DURATION,
-	} from "$lib/utils/transitions";
-	import { Head, LongDate } from "@erbridge/website-theme";
+		Head,
+		LongDate,
+		scrollToTop,
+		transitions,
+	} from "@erbridge/website-theme";
 	import { blur } from "svelte/transition";
 
 	export let title: string;
@@ -21,8 +17,10 @@
 	}[];
 
 	const baseStaggeredTransitionIn = {
-		...CONTENT_IN_PROPERTIES,
-		delay: PAGE_IN_TRANSITION_DELAY + PAGE_IN_TRANSITION_DURATION / 6,
+		...transitions.CONTENT_IN_PROPERTIES,
+		delay:
+			transitions.PAGE_IN_TRANSITION_DELAY +
+			transitions.PAGE_IN_TRANSITION_DURATION / 6,
 	};
 
 	let transitionFocusIndex: number | null = null;
@@ -35,10 +33,10 @@
 <Head {title} {description} />
 
 <header
-	in:blur={HEADER_IN_PROPERTIES}
+	in:blur={transitions.HEADER_IN_PROPERTIES}
 	out:blur={transitionFocusIndex === null
-		? HEADER_OUT_PROPERTIES
-		: CONTENT_OUT_PROPERTIES}
+		? transitions.HEADER_OUT_PROPERTIES
+		: transitions.CONTENT_OUT_PROPERTIES}
 	on:outroend={transitionFocusIndex === null ? scrollToTop : undefined}
 >
 	<slot />
@@ -51,11 +49,11 @@
 				...baseStaggeredTransitionIn,
 				delay:
 					baseStaggeredTransitionIn.delay +
-					(index * PAGE_IN_TRANSITION_DURATION) / 6,
+					(index * transitions.PAGE_IN_TRANSITION_DURATION) / 6,
 			}}
 			out:blur={transitionFocusIndex === index
-				? HEADER_OUT_PROPERTIES
-				: CONTENT_OUT_PROPERTIES}
+				? transitions.HEADER_OUT_PROPERTIES
+				: transitions.CONTENT_OUT_PROPERTIES}
 			on:outroend={transitionFocusIndex === index ? scrollToTop : undefined}
 		>
 			<a

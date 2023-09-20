@@ -1,13 +1,11 @@
 <script context="module">
 	import a from "$lib/components/markdown/a.svelte";
-	import scrollToTop from "$lib/utils/scrollToTop";
 	import {
-		CONTENT_IN_PROPERTIES,
-		CONTENT_OUT_PROPERTIES,
-		HEADER_IN_PROPERTIES,
-		HEADER_OUT_PROPERTIES,
-	} from "$lib/utils/transitions";
-	import { Head, LongDate } from "@erbridge/website-theme";
+		Head,
+		LongDate,
+		scrollToTop,
+		transitions,
+	} from "@erbridge/website-theme";
 	import { ChevronsLeft, ChevronsRight } from "lucide-svelte";
 	import { blur } from "svelte/transition";
 
@@ -56,8 +54,8 @@
 
 <article>
 	<header
-		in:blur={HEADER_IN_PROPERTIES}
-		out:blur={HEADER_OUT_PROPERTIES}
+		in:blur={transitions.HEADER_IN_PROPERTIES}
+		out:blur={transitions.HEADER_OUT_PROPERTIES}
 		on:outroend={scrollToTop}
 	>
 		<div>
@@ -117,7 +115,10 @@
 		</div>
 	</header>
 
-	<section in:blur={CONTENT_IN_PROPERTIES} out:blur={CONTENT_OUT_PROPERTIES}>
+	<section
+		in:blur={transitions.CONTENT_IN_PROPERTIES}
+		out:blur={transitions.CONTENT_OUT_PROPERTIES}
+	>
 		<slot />
 
 		{#if previous || next}
