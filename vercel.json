@@ -53,5 +53,11 @@
 				}
 			]
 		}
+	],
+	"redirects": [
+		{
+			"source": "/fiction/:path*",
+			"destination": "https://library.erbridge.co.uk/read/:path*"
+		}
 	]
 }
