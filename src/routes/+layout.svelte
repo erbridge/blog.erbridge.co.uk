@@ -46,6 +46,7 @@
 	pathname={$page.url.pathname}
 	contactEmail="blog@erbridge.co.uk"
 	internalLinks={data.internalLinks}
+	externalLink={data.externalLink}
 >
 	<slot slot="main" />
 </BaseLayout>

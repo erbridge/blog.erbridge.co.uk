@@ -9,9 +9,14 @@ export const load: LayoutLoad<{
 		exact?: boolean;
 		label: string;
 	}[];
+	externalLink: {
+		href: string;
+		label: string;
+		rel?: string[];
+	};
 }> = () => ({
 	internalLinks: [
-		{ href: "/", pathPrefix: "/", exact: true, label: "home" },
+		{ href: "/", pathPrefix: "/", exact: true, label: "blog" },
 		{ href: "/weeknotes", pathPrefix: "/weeknotes", label: "weeknotes" },
 		{ href: "/inclusivity", pathPrefix: "/inclusivity", label: "inclusivity" },
 		{ href: "/tech", pathPrefix: "/tech", label: "tech" },
@@ -19,4 +24,5 @@ export const load: LayoutLoad<{
 		{ href: "/food", pathPrefix: "/food", label: "food" },
 		{ href: "/archive", pathPrefix: "/archive", label: "the archive" },
 	],
+	externalLink: { href: "https://erbridge.co.uk/", label: "home", rel: ["me"] },
 });
