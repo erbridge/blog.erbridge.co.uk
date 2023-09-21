@@ -1,4 +1,8 @@
+import { dev } from "$app/environment";
+import { inject } from "@vercel/analytics";
 import type { LayoutLoad } from "./$types";
+
+inject({ mode: dev ? "development" : "production" });
 
 export const prerender = true;
 
