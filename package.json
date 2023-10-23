@@ -14,7 +14,7 @@
 		"@erbridge/website-theme": "github:erbridge/website-theme",
 		"@nodelib/fs.walk": "^1.2.8",
 		"@sveltejs/adapter-static": "^2.0.3",
-		"@sveltejs/kit": "^1.0.1",
+		"@sveltejs/kit": "^1.27.0",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.0",
 		"@vercel/analytics": "^1.0.2",
