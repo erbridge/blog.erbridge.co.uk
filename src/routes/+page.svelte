@@ -48,7 +48,7 @@
 	<p>
 		If you’d like to chat about anything I’ve written, <a
 			rel="external me"
-			href="https://tech.lgbt/@erbridge">toot</a
+			href="https://sunspot.garden/@erbridge">toot</a
 		>
 		or
 		<a href="mailto:blog@erbridge.co.uk">email</a> me. I’d love to hear from you!
