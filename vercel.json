@@ -58,6 +58,10 @@
 		{
 			"source": "/fiction/:path*",
 			"destination": "https://library.erbridge.co.uk/read/:path*"
+		},
+		{
+			"source": "/food/szcehuan-lasagne",
+			"destination": "/food/szechuan-lasagne"
 		}
 	]
 }
