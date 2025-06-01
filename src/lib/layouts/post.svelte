@@ -284,6 +284,7 @@
 		background-color: rgb(var(--secondary-accent-colour));
 		color: rgb(var(--background-colour));
 		font-family: var(--heading-font-family);
+		font-weight: var(--heading-font-weight);
 		text-align: center;
 	}
 </style>

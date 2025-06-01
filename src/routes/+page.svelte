@@ -69,7 +69,7 @@
 	header p {
 		margin-bottom: 0;
 		font-family: var(--heading-font-family);
-		font-weight: 600;
+		font-weight: var(--heading-font-weight);
 		font-size: 1em;
 		line-height: 1.2;
 		color: rgb(var(--accent-colour));
@@ -103,6 +103,7 @@
 
 	span {
 		font-family: var(--heading-font-family);
+		font-weight: var(--heading-font-weight);
 		color: rgb(var(--accent-colour));
 	}
 
