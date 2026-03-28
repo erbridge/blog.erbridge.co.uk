@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@erbridge/website-theme": "github:erbridge/website-theme",
-		"@nodelib/fs.walk": "^1.2.8",
+		"@nodelib/fs.walk": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.0.1",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
